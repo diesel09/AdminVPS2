@@ -1,0 +1,10 @@
+#!/bin/bash
+link_src () {
+	bot_retorno="$LINE\n"
+	bot_retorno+=" 💥 Instalador Oficial 💥 \n 🧬 Soporte : Ubuntu 14.04 - 16.04 - 18.04 - 20.04 \n"
+	bot_retorno+="Verifica tus Keys, : @FelipeCouoh \n"
+	bot_retorno+="$LINE\n"
+	bot_retorno+="wget https://raw.githubusercontent.com/diesel09/mxvps/master/vps-mx-free/instalscript.sh; chmod 777 instalscript.sh; ./instalscript.sh\n"
+	bot_retorno+="$LINE\n"
+msj_fun
+}

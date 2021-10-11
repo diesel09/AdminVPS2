@@ -1,0 +1,72 @@
+#!/bin/bash
+[[ -e /etc/ADM-db/idioma_menuinst ]] && tr=$(cat < /etc/ADM-db/idioma_menuinst)
+text1=$(source trans -b pt:${tr} "MENU DE COMANDOS ")
+text2=$(source trans -b pt:${tr} "INSTRUCCIONES DE COMANDOS ")
+menu_src () {
+#namcli=$(bash /etc/ADM-db/BotGen.sh | grep  message_from_first_name | grep message_from_first_name | grep -i message_from_first_name | awk {'print $4'})
+#${message_text[$usuario]}
+#bot_retorno="  🎊 𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚒𝚍𝚘  $message_from_first_name $message_from_last_name  𝚊𝚕  𝙱𝚘𝚝𝙶𝚎𝚗  𝙲𝚑𝚞𝚖𝚘𝙶𝙷-𝙰𝙳𝙼  🎊\n"
+bot_retorno="======🚫 Suscripcion Expirada, Usuario: $message_from_first_name $message_from_last_name 🚫======\n"
+	 if [[ $(echo $permited|grep "${chatuser}") = "" ]]; then
+		 if [[ $(cat ${CID}|grep "${chatuser}") = "" ]]; then
+		 	 bot_retorno+="$LINE\n"
+			 #bot_retorno+="𝙃𝙤𝙡𝙖 (  $message_from_first_name $message_from_last_name  ), 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖𝙡 𝙈𝙚𝙣𝙪"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="  ⚠️ TENDRAS ACCESO LIMITADO ⚠️ \n  🚫 Sin TU RESELLER EN LA KEY 🚫"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="Bienvenido 【 @$message_from_username 】, $(source trans -b pt:${tr} "tu ID No Fue autorizado, Realiza una Donacion ") \n"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="/ID    | Muestra sus ID |\n"
+			 bot_retorno+="/menu  | $text1\n"
+			 bot_retorno+="/ayuda | $text2\n"
+			 bot_retorno+="$LINE\n"
+			 #bot_retorno+="Si tienes inconvenientes con el BotGEN \n Contactame : $(cat < /etc/ADM-db/resell)\n"
+			 bot_retorno+="Si tienes inconvenientes con el BotGEN \n Contactame : @FelipeCouoh\n"
+			 bot_retorno+="$LINE\n"
+			 msj_fun
+		 else
+		 	[[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")"
+		 	numkey_used=$(grep -o -i $message_chat_id /etc/gerar-sh-log | wc -l)
+			numkey_gen=$(grep -o -i $message_chat_id /etc/ADM-db/num-key.cont | wc -l)
+			bot_retorno+="$LINE\n"
+			 bot_retorno+="  ⚠️ TENDRAS ACCESO ILIMITADO ⚠️ \n  🚫 Sin TU RESELLER EN LA KEY 🚫"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="𝙃𝙤𝙡𝙖 【 $message_from_first_name $message_from_last_name 】, 𝘽𝙞𝙚𝙣𝙫𝙚𝙣𝙞𝙙𝙤 𝙖𝙡 𝙈𝙚𝙣𝙪"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="Reseller Actual: $nomkey\n"
+			 bot_retorno+="$LINE\n"
+			 bot_retorno+="/ID     ►  𝘔𝘶𝘦𝘴𝘵𝘳𝘢 𝘴𝘶𝘴 𝘐𝘋 📍\n"
+			 bot_retorno+="/instal ►  𝘓𝘪𝘯𝘬 𝘥𝘦 𝘐𝘕𝘚𝘛𝘈𝘓𝘈𝘋𝘖𝘙 𝘖𝘍𝘐𝘊𝘐𝘈𝘓 |\n"
+			 bot_retorno+="/menu   ►  𝘔𝘦𝘯𝘶 𝘥𝘦 𝘊𝘰𝘮𝘢𝘯𝘥𝘰𝘴 𝘋𝘪𝘴𝘱𝘰𝘯𝘪𝘣𝘭𝘦𝘴 | \n"
+			 bot_retorno+="/ayuda  ►  Ayuda/Instrucciones 𝘥𝘦𝘭 𝘔𝘌𝘕𝘜 |\n"
+			 bot_retorno+=" ❊ 𝚁𝚎𝚌𝚞𝚎𝚛𝚍𝚊 𝙲𝚘𝚕𝚊𝚋𝚘𝚛𝚊𝚛 💸💰 , 𝚜𝚒 𝚝𝚎 𝚊𝚐𝚛𝚊𝚍𝚘 𝚖𝚒 𝚃𝚛𝚊𝚋𝚊𝚓𝚘 ❊\n"
+			 bot_retorno+="Si tienes inconvenientes con el Bot  🎁 Contactame : +529842147259 📲\n"
+			 bot_retorno+=" 🔐 『 $numkey_used 』𝙆𝙚𝙮𝙨 𝙐𝙨𝙖𝙙𝙖𝙨 🔓,『 $numkey_gen 』𝙆𝙚𝙮𝙨 𝙂𝙚𝙣𝙚𝙧𝙖𝙙𝙖𝙨 🗝️ \n"
+			 bot_retorno+="$LINE\n"
+			 menu_print
+		 fi
+		 
+	 else
+		 unset PID_GEN
+		 
+		 PID_GEN=$(ps x|grep -v grep|grep "http-server.sh")
+		 [[ ! $PID_GEN ]] && PID_GEN='(Offline) ❌' || PID_GEN='(Online) ✅'
+
+		 unset usadas
+		 usadas="$(cat /etc/http-instas)"
+		 [[ ! $usadas ]] && k_used="0" || k_used="$usadas"
+		 bot_retorno+="Gen $PID_GEN | Keys Used [$k_used]\n"
+
+		 bot_retorno+="$LINE\n"
+		 bot_retorno+="/infosys ❈ INFORMACION DEL SERVIDOR |\n"
+		 bot_retorno+="/list ❈ MUESTRA LISTA DE ID PERMITIDOS\n"
+		 bot_retorno+="/instal ❈ INSTALADOR OFICIAL |\n"
+		 bot_retorno+="/menu ❈ MENU DE ACCIONES |\n"
+		 bot_retorno+="/ayuda ❈ INSTRUCCIONES DE COMANDOS |\n"
+		 bot_retorno+="/cache ❈ OPTIMIZA SERVIDOR |\n"
+		 bot_retorno+="/update ❈ ACTUALIZA BOT |\n"
+		 bot_retorno+="/reboot ❈ REINICIA SERVIDOR VPS |\n"
+		 bot_retorno+="$LINE\n"
+		 menu_print
+	 fi	
+}
