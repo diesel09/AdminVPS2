@@ -183,9 +183,8 @@ msg -verm "Perfecto, Iniciando Configuracion: "
 echo " "
 echo -e " \033[1;32m[ Adquiera este Script en: ] "
 echo -e " \033[1;32m[ Telegram: @KeyVpspremium_bot ] "
-wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl &> /dev/null
-chmod +x $HOME/payssl*
-rm -rf payssl
+wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh; chmod +x payssl.sh* && ./payssl.sh
+rm -rf payssl.sh
 msg -bar
 else
 msg -verm "Procedimiento Cancelado: "
