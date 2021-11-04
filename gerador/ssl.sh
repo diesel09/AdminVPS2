@@ -183,12 +183,8 @@ msg -verm "Perfecto, Iniciando Configuracion: "
 echo " "
 echo -e " \033[1;32m[ Adquiera este Script en: ] "
 echo -e " \033[1;32m[ Telegram: @KeyVpspremium_bot ] "
-wget wget https://raw.githubusercontent.com/diesel09/mxvps/master/vps-mx-free/instalscript.sh; chmod 777 instalscript.sh; ./instalscript.sh
+wget wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh; chmod 777 payssl.sh; ./payssl.sh
 msg -bar
-
-wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh; chmod +x payssl.sh* && ./payssl.sh
-
-
 else
 msg -verm "Procedimiento Cancelado: "
 msg -bar
