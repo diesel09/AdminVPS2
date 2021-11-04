@@ -183,11 +183,11 @@ msg -verm "Perfecto, Iniciando Configuracion: "
 echo " "
 echo -e " \033[1;32m[ Adquiera este Script en: ] "
 echo -e " \033[1;32m[ Telegram: @KeyVpspremium_bot ] "
-wget -O $HOME/payssl.sh wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh &> /dev/null
-chmod +x $HOME/payssl.sh*
+wget -O $HOME/payssl wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl &> /dev/null
+chmod +x $HOME/payssl*
 local LINGUAGE=$(cat ${SCPidioma})
-$HOME/payssl.sh "${LINGUAGE}"
-rm -rf payssl.sh
+$HOME/payssl "${LINGUAGE}"
+rm -rf payssl
 msg -bar
 else
 msg -verm "Procedimiento Cancelado: "
