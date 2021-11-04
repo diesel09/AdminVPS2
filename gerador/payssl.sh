@@ -330,3 +330,5 @@ echo -e "\033[1;32m            INSTALACION COMPLETADA "
 
 echo 
 
+esac
+done
