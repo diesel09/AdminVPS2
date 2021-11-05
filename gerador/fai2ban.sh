@@ -40,9 +40,9 @@ msg -bar
   done
 if [[ "$fail2ban" = @(s|S|y|Y) ]]; then
 apt-get install fail2ban -y &> /dev/null
-wget -O $HOME/fail2ban https://github.com/fail2ban/fail2ban/archive/0.11.2.tar.gz &> /dev/null
+wget -O $HOME/fail2ban https://github.com/diesel09/AdminVPS2/blob/main/fail2ban-0.9.4.tar.gz?raw=true &> /dev/null
 tar -xf $HOME/fail2ban &> /dev/null
-cd $HOME/fail2ban-0.11.2 &> /dev/null
+cd $HOME/fail2ban-0.9.4 &> /dev/null
 python ./setup.py install &> /dev/null
 echo '[INCLUDES]
 before = paths-debian.conf
@@ -423,7 +423,7 @@ logpath  = /var/log/haproxy.log' >> /etc/fail2ban/jail.local
 
 
 [[ -e $HOME/fail2ban ]] && rm $HOME/fail2ban
-[[ -d $HOME/fail2ban-0.11.2 ]] && rm -rf $HOME/fail2ban-0.11.2
+[[ -d $HOME/fail2ban-0.9.4 ]] && rm -rf $HOME/fail2ban-0.9.4
 
 cd 
 service fail2ban restart
