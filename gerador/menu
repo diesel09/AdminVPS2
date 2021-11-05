@@ -535,7 +535,7 @@ case $1 in
 "squid.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SQUID ---------------------------- $(pid_inst squid)";;
 "dropbear.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "DROPBEAR ------------------------- $(pid_inst dropbear)";;
 "openvpn.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "OPENVPN -------------------------- $(pid_inst openvpn)";;
-"ssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SSL ------------------------------ $(pid_inst stunnel4)";;
+"ssl.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "SSL ------------------------------ $(pid_inst stunnel4)";;
 "shadowsocks.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-NORMAL --------------- $(pid_inst ssserver)";;
 "Shadowsocks-libev.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-LIBEV ---------------- $(pid_inst ss-server)";;
 "Shadowsocks-R.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SHADOWSOCKS-R -------------------- ${valuest}";; 
@@ -544,7 +544,7 @@ case $1 in
 "v2ui.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "V2-UI PANEL WEB ------------------ $(pid_inst v2-ui)";;
 "budp.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "BADVPN-(UDP:7300) ---------------- $(pid_inst badvpn)";;
 "trojanserver.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "TROJAN SERVER -------------------- $(pid_inst trojan)";;
-"payssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "WEBSOCKET ---------------- $(pid_inst python)";;
+"payssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "WEBSOCKET ------------------------ $(pid_inst python)";;
 
 "paysnd.sh")return 1;;
 "ultrahost")return 1;;
