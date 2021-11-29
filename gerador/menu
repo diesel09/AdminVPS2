@@ -877,6 +877,36 @@ echo -e "            $monitorservi  --  CON EXITO"
 msg -bar
 
 }
+
+monitor_auto () {
+while true; do
+monitor.sh 2>/dev/null
+sleep 120s 
+    done
+}
+if [[ "$1" = "monitorservi" ]]; then
+monitor_auto
+exit
+fi
+pid_kill () {
+[[ -z $1 ]] && refurn 1
+pids="$@"
+for pid in $(echo $pids); do
+kill -9 $pid &>/dev/null
+done
+}
+monitorport_fun () {
+while true; do
+pidproxy3=$(ps x | grep "PDirect.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidproxy3 ]] && pid_kill $pidproxy3
+pidpyssl=$(ps x | grep "python.py" | grep -v "grep" | awk -F "pts" '{print $1}') && [[ ! -z $pidpyssl ]] && pid_kill $pidpyssl
+sleep 6h 
+done
+}
+if [[ "$1" = "moni2" ]]; then
+monitorport_fun
+exit
+fi
+
 monhtop () {
 clear 
 msg -bar
