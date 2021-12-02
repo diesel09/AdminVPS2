@@ -40,11 +40,11 @@ echo "
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-  <title>Monitor de Servicios VPS-MX</title>
+  <title>Monitor de Servicios ADMIN VPS</title>
   <link rel='stylesheet' href='estilos.css'>
 </head>
 <body>
-<h1>Monitor de Servicios By @VPS-MX</h1>
+<h1>Monitor de Servicios</h1>
 <p id='ultact'>Última actualización: $FECHA</p>
 <hr>
 " > $DIR/$ARCHIVO
