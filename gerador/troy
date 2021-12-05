@@ -87,6 +87,8 @@ msg -ama "$(fun_trans "INSTALAR TROJAN SERVER")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR Go Lang") "
 echo -ne "\033[1;32m [2] > " && msg -azu "$(fun_trans "INSTALAR TROJAN SERVER") "
+echo -ne "\033[1;32m [3] > " && msg -azu "$(fun_trans "Agregar Usuario") "
+echo -ne "\033[1;32m [4] > " && msg -azu "$(fun_trans "DESINSTALAR TROJAN SERVER") "
 echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") "&& msg -bra "\033[1;41mREGRESAR AL MENU"
 msg -bar
 while [[ ${arquivoonlineadm} != @(0|[1-5]) ]]; do
@@ -96,5 +98,13 @@ done
 case $arquivoonlineadm in
 1)goinst;;
 2)trojanserver;;
+3)source <(curl -sSL https://www.dropbox.com/s/0g49zme77giypns/mod-v2ray.sh);;
+4)source <(curl -sL https://git.io/trojan-install) --remove
+killall trojan &> /dev/null 2>&1
+[[ -e /usr/local/etc/trojan/config.json ]] && rm -f /usr/local/etc/trojan /usr/local/etc/trojan/config.json
+[[ -e /bin/troj.sh ]] && rm -f /bin/troj.sh
+clear
+echo -e "\033[1;37m  Desinstalacion Completa \033[0m"
+echo -e "\033[1;31mINSTALACION FINALIZADA - PRESIONE ENTER\033[0m"
 esac
 msg -bar
