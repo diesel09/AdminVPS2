@@ -768,7 +768,7 @@ msg -bar
 echo -e "\e[97m\033[1;41m       =====>>►► PANEL • ADMIN VPS • ◄◄<<=====       \033[1;37m"
 msg -bar
 msg -bra "   VERSION INSTALADA: \033[1;32m[\033[1;32m $vesaoSCTNEW\033[1;97m"
-msg -bra "   VERSION ANTERIOR:  \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
+#msg -bra "   VERSION ANTERIOR:  \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 #[[ -e ${SCPdir}/key.txt ]] && msg -bar && msg -bra " KEY: \033[1;93m$(cat ${SCPdir}/key.txt)"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
 msg -bra " CONTACTO: \033[1;31m[\033[1;32m +52 9842147259 \033[1;31m] "
