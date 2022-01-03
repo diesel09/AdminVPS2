@@ -14,7 +14,7 @@ ${comando[1]} -y > /dev/null 2>&1
 touch $HOME/fim
  ) > /dev/null 2>&1 &
  tput civis
-echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+echo -ne "  \033[1;33mESPERE \033[1;37m- \033[1;33m["
 while true; do
    for((i=0; i<18; i++)); do
    echo -ne "\033[1;31m#"
@@ -25,7 +25,7 @@ while true; do
    sleep 1s
    tput cuu1
    tput dl1
-   echo -ne "  \033[1;33mAGUARDE \033[1;37m- \033[1;33m["
+   echo -ne "  \033[1;33mESPERE \033[1;37m- \033[1;33m["
 done
 echo -e "\033[1;33m]\033[1;37m -\033[1;32m OK !\033[1;37m"
 tput cnorm
@@ -35,13 +35,13 @@ echo -e "\033[1;31m════════════════════�
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "INSTALADOR SLOWDNS MANAGER" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo -e ""
-echo -e "      Esse script irá fazer a instalação do"
-echo -e "   gerenciador para o modo de conexão SlowDNS."
+echo -e "      Inicianso instalacion para"
+echo -e "   admimistrar conexion de SlowDNS."
 echo -e ""
-echo -e "         \033[1;33mInstalador feito por edição \033[1;37m"
+echo -e "         \033[1;33mEjecutando Instalador  \033[1;37m"
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "BAIXANDO DEPENDENCIAS..."
+echo -e "Descargando Archivos..."
 echo ""
 fun_att () {
 apt install ncurses-utils -y
@@ -64,7 +64,7 @@ fun_ports () {
 apt install firewalld -y && sudo firewall-cmd --zone=public --permanent --add-port=80/tcp && sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp && sudo firewall-cmd --zone=public --permanent --add-port=443/tcp && sudo firewall-cmd && sudo firewall-cmd --zone=public --permanent --add-port=53/udp && sudo firewall-cmd --zone=public --permanent --add-port=5300/udp && sudo firewall-cmd && sudo firewall-cmd --zone=public --permanent --add-port=2222/tcp && sudo firewall-cmd --reload
 }
 fun_bar 'fun_ports'
-echo -e "DEFININDO DNS DO CLOUDFLARE..."
+echo -e "DEFINIENDO DNS DE CLOUDFLARE..."
 echo ""
 fun_dnscf () {
 sudo systemctl disable systemd-resolved.service && sudo systemctl stop systemd-resolved.service && sudo mv /etc/resolv.conf /etc/resolv.conf.bkp && echo "nameserver 1.1.1.1" > /etc/resolv.conf
@@ -74,11 +74,11 @@ sleep 2
 fun_bar 'fun_dnscf'
 clear
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "INSTALADOR SLOWDNS MANAGER" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "INSTALADOR SLOWDNS" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
-echo -e "          \033[1;33mINSTALAÇÃO CONCLUIDA!\033[0m          "
+echo -e "          \033[1;33mINSTALACION FINALIZADA!\033[0m          "
 echo ""
-echo -e "Para abrir o menu, use o comando: \033[1;33mslowdns\033[0m"
+echo -e "Para abrir el menu, use el comando: \033[1;33mslowdns\033[0m"
 cd
 rm install
