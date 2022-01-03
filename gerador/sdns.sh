@@ -36,7 +36,7 @@ tput setaf 7 ; tput setab 4 ; tput bold ; printf '%40s%s%-12s\n' "INSTALADOR SLO
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo -e ""
 echo -e "      Inicianso instalacion para"
-echo -e "   admimistrar conexion de SlowDNS."
+echo -e "   administrar conexion SlowDNS."
 echo -e ""
 echo -e "         \033[1;33mEjecutando Instalador  \033[1;37m"
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
@@ -64,7 +64,7 @@ fun_ports () {
 apt install firewalld -y && sudo firewall-cmd --zone=public --permanent --add-port=80/tcp && sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp && sudo firewall-cmd --zone=public --permanent --add-port=443/tcp && sudo firewall-cmd && sudo firewall-cmd --zone=public --permanent --add-port=53/udp && sudo firewall-cmd --zone=public --permanent --add-port=5300/udp && sudo firewall-cmd && sudo firewall-cmd --zone=public --permanent --add-port=2222/tcp && sudo firewall-cmd --reload
 }
 fun_bar 'fun_ports'
-echo -e "DEFINIENDO DNS DE CLOUDFLARE..."
+echo -e "ESTABLECIENDO DNS DE CLOUDFLARE..."
 echo ""
 fun_dnscf () {
 sudo systemctl disable systemd-resolved.service && sudo systemctl stop systemd-resolved.service && sudo mv /etc/resolv.conf /etc/resolv.conf.bkp && echo "nameserver 1.1.1.1" > /etc/resolv.conf
