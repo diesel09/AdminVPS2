@@ -545,6 +545,7 @@ case $1 in
 "budp.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "BADVPN-(UDP:7300) ---------------- $(pid_inst badvpn)";;
 "trojanserver.sh")echo -ne "$(msg -verd "[$2]") $(msg -verm2 "==>>") " && msg -azu "TROJAN SERVER -------------------- $(pid_inst trojan)";;
 "payssl.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "WEBSOCKET ------------------------ $(pid_inst python)";;
+"sdns.sh")echo -ne "$(msg -verd " [$2]") $(msg -verm2 "==>>") " && msg -azu "SLOW DNS ------------------------- $(pid_inst python)";;
 
 "paysnd.sh")return 1;;
 "ultrahost")return 1;;
