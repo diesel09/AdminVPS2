@@ -41,3 +41,4 @@ http-server.py
 panelweb.sh
 vnc
 payssl.sh
+sdns.sh
