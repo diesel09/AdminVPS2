@@ -48,14 +48,14 @@ apt install ncurses-utils -y
 mkdir /etc/slowdns
 cd /etc/slowdns
 wget https://github.com/leitura/slowdns/raw/main/dns-server; chmod +x dns-server
-wget https://raw.githubusercontent.com/leitura/slowdns/main/remove-slow; chmod +x remove-slow
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns-info; chmod +x slowdns-info
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns-drop; chmod +x slowdns-drop
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns-ssh; chmod +x slowdns-ssh
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns-ssl; chmod +x slowdns-ssl
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns-socks; chmod +x slowdns-socks
-wget https://raw.githubusercontent.com/leitura/slowdns/main/slowdns; chmod +x slowdns; cp slowdns /bin/
-wget https://raw.githubusercontent.com/leitura/slowdns/main/stopdns; chmod +x stopdns
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/remove-slow; chmod +x remove-slow
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns-info; chmod +x slowdns-info
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns-drop; chmod +x slowdns-drop
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns-ssh; chmod +x slowdns-ssh
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns-ssl; chmod +x slowdns-ssl
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns-socks; chmod +x slowdns-socks
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/slowdns; chmod +x slowdns; cp slowdns /bin/
+wget https://raw.githubusercontent.com/diesel09/slowdns/main/stopdns; chmod +x stopdns
 }
 fun_bar 'fun_att'
 echo -e "CONFIGURANDO FIREWALL..."
