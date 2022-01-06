@@ -778,6 +778,7 @@ msg -bra " CONTACTO: \033[1;31m[\033[1;32m +52 9842147259 \033[1;31m] "
 msg -bar
 echo -e "\033[1;31m     CPU: \033[1;37mNo.DE NUCLEOS:\033[1;32m $_core \033[1;31m  USO DE CPU: \033[1;32m$_usop "
 echo -e "\033[1;31m     RAM: \033[1;37m TOTAL: \033[1;32m$ram1 \033[1;31m      USO RAM: \033[1;32m$_usor"
+echo -e "\033[1;31m     CACHE: \033[1;32m$mb "
 msg -ne "     S.O: " && echo -ne "\033[1;37m$(os_system)"
 msg -ne "     IP: " && echo -e "\033[1;37m$(meu_ip)"
 msg -bar
