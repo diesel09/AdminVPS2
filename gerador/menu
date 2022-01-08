@@ -1,14 +1,14 @@
 #!/bin/bash
 #22/01/2021
 clear
-#ACTULIZADOR
+#ACTUALIZADOR
 [[ ! -e /etc/versin_script ]] && echo 1 > /etc/versin_script
 v11=$(cat /etc/versin_script_new) 
 v22=$(cat /etc/versin_script)
 #vesaoSCT="\033[1;32m•ADMIN VPS• (v$v11)\033[1;31m]"
-#[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCT="\033[1;31m•ADMIN VPS• (v$v22) ► \033[1;32m•ADMIN VPS• (v$v11)\033[1;31m]" 
-[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCTNEW="\033[1;32m•ADMIN VPS• (v$v11) \033[1;32m]"
-[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCT="\033[1;31m•ADMIN VPS• (v$v22) \033[1;31m]"
+[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCT="\033[1;31m•ADMIN VPS• (v$v22) ► \033[1;32m•ADMIN VPS• (v$v11)\033[1;31m]" 
+#[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCTNEW="\033[1;32m•ADMIN VPS• (v$v11) \033[1;32m]"
+#[[ $v11 = $v22 ]] && vesaoSCT="\033[1;32m•ADMIN VPS• (v$v22)\033[1;97m #OFICIAL ®️ \033[1;31m]" || vesaoSCT="\033[1;31m•ADMIN VPS• (v$v22) \033[1;31m]"
 _hora=$(printf '%(%D-%H:%M:%S)T') 
 #COLORES 
 red=$(tput setaf 1)
@@ -772,7 +772,7 @@ clear
 msg -bar
 echo -e "\e[97m\033[1;41m       =====>>►► PANEL • ADMIN VPS • ◄◄<<=====       \033[1;37m"
 msg -bar
-msg -bra "   VERSION INSTALADA: \033[1;32m[\033[1;32m $vesaoSCTNEW\033[1;97m"
+msg -bra "   VERSION INSTALADA: \033[1;32m[\033[1;32m $vesaoSCT \033[1;97m"
 #msg -bra "   VERSION ANTERIOR:  \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 #[[ -e ${SCPdir}/key.txt ]] && msg -bar && msg -bra " KEY: \033[1;93m$(cat ${SCPdir}/key.txt)"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
