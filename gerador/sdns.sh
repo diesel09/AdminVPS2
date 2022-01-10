@@ -81,4 +81,5 @@ echo -e "          \033[1;33mINSTALACION FINALIZADA!\033[0m          "
 echo ""
 echo -e "Para abrir el menu, use el comando: \033[1;33mslowdns\033[0m"
 cd
-rm install
+#rm install
+menu
