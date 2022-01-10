@@ -783,8 +783,8 @@ msg -bra " VERSION: \033[1;32m[\033[1;32m $vesaoSCT \033[1;97m"
 [[ -e ${SCPdir}/message.txt ]] && msg -bar && msg -bra " RESELLER:\033[1;96m $(cat ${SCPdir}/message.txt) "
 msg -bra " CONTACTO: \033[1;31m[\033[1;32m +52 9842147259 \033[1;31m] "
 msg -bar
-echo -e "\033[1;31m     CPU: \033[1;37mCores:\033[1;32m $_core \033[1;31m  USO CPU: \033[1;32m$_usop  \033[1;31m   CACHE: \033[1;32m$mb"
-echo -e "\033[1;31m     RAM: \033[1;32m$ram1 \033[1;31m  USO RAM: \033[1;32m$_usor   RAM LIBRE: \033[1;32m$ram2"
+echo -e "\033[1;31m     CPU: \033[1;37mCores:\033[1;32m $_core \033[1;31m  USO CPU: \033[1;32m$_usop  \033[1;31m  CACHE: \033[1;32m$mb"
+echo -e "\033[1;31m     RAM: \033[1;32m$ram1 \033[1;31m  USO RAM: \033[1;32m$_usor  \033[1;31m RAM LIBRE: \033[1;32m$ram2"
 msg -ne "     S.O: " && echo -ne "\033[1;37m$(os_system)"
 msg -ne "     IP: " && echo -e "\033[1;37m$(meu_ip)"
 msg -bar
