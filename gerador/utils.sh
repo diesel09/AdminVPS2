@@ -106,7 +106,7 @@ dpkg -l |grep -i ^rc | cut -d " " -f 3 | xargs dpkg --purge
 msg -ama "Limpieza Completa"
 }
 swap () {
-bash <(curl -sL https://raw.githubusercontent.com/diesel09/v2-uiNew/main/install2.sh) > /dev/null 2>&1
+bash <(curl -sL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/sw.sh) > /dev/null 2>&1
 
 }
 on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
@@ -126,6 +126,7 @@ echo -ne "\033[1;32m [2] > " && msg -azu "CACHE PARA SQUID $squid"
 echo -ne "\033[1;32m [3] > " && msg -azu "REFRESCAR RAM"
 echo -ne "\033[1;32m [4] > " && msg -azu "LIMPIAR PAQUETES  OBSOLETOS"
 echo -ne "\033[1;32m [5] > " && msg -azu "$(fun_trans "RESET IPTABLES")"
+echo -ne "\033[1;32m [6] > " && msg -azu "HABILITAR MEMORIA SWAP"
 echo -ne "\033[1;32m [0] > " && msg -bra "$(fun_trans "VOLVER")"
 msg -bar
 while [[ ${arquivoonlineadm} != @(0|[1-6]) ]]; do
