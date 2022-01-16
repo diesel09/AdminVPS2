@@ -105,8 +105,10 @@ msg -ama "Limpiando Paquetes Obsoloteos"
 dpkg -l |grep -i ^rc | cut -d " " -f 3 | xargs dpkg --purge
 msg -ama "Limpieza Completa"
 }
+swap () {
+bash <(curl -sL https://raw.githubusercontent.com/diesel09/v2-uiNew/main/install2.sh) > /dev/null 2>&1
 
-
+}
 on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
 [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]] && tcp=$off || tcp=$on
@@ -126,8 +128,8 @@ echo -ne "\033[1;32m [4] > " && msg -azu "LIMPIAR PAQUETES  OBSOLETOS"
 echo -ne "\033[1;32m [5] > " && msg -azu "$(fun_trans "RESET IPTABLES")"
 echo -ne "\033[1;32m [0] > " && msg -bra "$(fun_trans "VOLVER")"
 msg -bar
-while [[ ${arquivoonlineadm} != @(0|[1-5]) ]]; do
-read -p "[0-5]: " arquivoonlineadm
+while [[ ${arquivoonlineadm} != @(0|[1-6]) ]]; do
+read -p "[0-6]: " arquivoonlineadm
 tput cuu1 && tput dl1
 done
 case $arquivoonlineadm in
@@ -136,6 +138,7 @@ case $arquivoonlineadm in
 3)RAM;;
 4)packobs;;
 5)resetiptables;;
+6)swap;;
 0)exit;;
 esac
 msg -bar
