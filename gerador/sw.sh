@@ -5,7 +5,7 @@ declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
 
-clear
+
 BARRA="\033[0;49;31m============================================================\033[0m"
 echo -e $BARRA
 echo -e "\033[7;107;31mEsto le ayudara a crear un archivo swap para su sistema\033[0m"
