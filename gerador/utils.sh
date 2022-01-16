@@ -106,8 +106,7 @@ dpkg -l |grep -i ^rc | cut -d " " -f 3 | xargs dpkg --purge
 msg -ama "Limpieza Completa"
 }
 swap () {
-bash <(curl -sL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/sw.sh) > /dev/null 2>&1
-
+source <(curl -sL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/sw.sh)
 }
 on="\033[1;32m[ON]" && off="\033[1;31m[OFF]"
 [[ $(ps x | grep badvpn | grep -v grep | awk '{print $1}') ]] && badvpn=$on || badvpn=$off
