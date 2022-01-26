@@ -164,17 +164,39 @@ ln -s /usr/share/zoneinfo/America/Merida /etc/localtime
 echo -e " FECHA LOCAL MX APLICADA!"
 }
 
-timearg () {
-rm -rf /etc/localtime
-ln -sf /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
-echo -e " FECHA LOCAL ARG APLICADA!"
+#timearg () {
+#rm -rf /etc/localtime
+#ln -sf /usr/share/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
+#echo -e " FECHA LOCAL ARG APLICADA!"
+#}
+
+zona () {
+msg -bar
+echo -e "  \e[41mACTUALIZAR FECHA Y HORA LOCAL\e[0m"
+msg -bar
+	n=1
+    for i in $(ls /usr/share/zoneinfo/America); do
+        loc=$(echo $i|awk -F ":" '{print $1}')
+        zona=$(printf '%-12s' "$loc")
+        echo -e " \e[36m [$n] \e[31m> \e[32m$zona"
+        r[$n]=$zona
+        selec="$n"
+        let n++ 
+    done
+   msg -bar
+    opci=$(selection_fun $selec)
+  rm -rf /etc/localtime > /dev/null 2>&1
+  echo "America/${r[$opci]}" > /etc/timezone
+ln -fs /usr/share/zoneinfo/America/${r[$opci]} /etc/localtime > /dev/null 2>&1
+dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1 && echo -e "\033[1;32m [FECHA Y HORA ACTUALIZADA]" || echo -e "\033[1;31m [HORA NO ACTUALIZADO]"
+
 }
 
 
 gestor_fun () {
 clear
 msg -bar
-echo -e "\033[1;37m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\033[1;37m       =====>>►► 🐲 PANEL ADMIN VPS 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e " ${cor[3]}             AJUSTES INTERNOS DEL VPS  "
 msg -bar
@@ -185,7 +207,7 @@ echo -e "${cor[4]} [3] > \033[1;36mREINICIAR VPS"
 echo -e "${cor[4]} [4] > \033[1;36mCAMBIAR HOSTNAME VPS"
 echo -e "${cor[4]} [5] > \033[1;36mCAMBIAR CONTRASEÑA ROOT"
 echo -e "${cor[4]} [6] > \033[1;36mCAMBIAR HORA LOCAL MX"
-echo -e "${cor[4]} [7] > \033[1;36mCAMBIAR HORA LOCAL ARG"
+echo -e "${cor[4]} [7] > \033[1;36mSELECCIONAR HORA LOCAL"
 echo -e "${cor[2]} [8] > \033[1;100mAGREGAR ROOT a GoogleCloud y Amazon \033[0;37m"
 echo -e "${cor[4]} [0] > VOLVER"
 while [[ ${opx} != @(0|[1-9]) ]]; do
@@ -215,7 +237,7 @@ case $opx in
 	timemx
 	break;;
 	7)
-	timearg
+	zona
 	break;;
 	8)
 	rootpass
