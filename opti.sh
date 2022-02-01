@@ -1,3 +1,4 @@
+#!/bin/bash
 unset opti
 opti=$(cat /bin/ejecutar/val)
 if [ "$opti" = "0" ]; then
