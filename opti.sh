@@ -1,9 +1,4 @@
 #!/bin/bash
-unset opti
-opti=$(cat /bin/ejecutar/val)
-if [ "$opti" = "0" ]; then
-echo "activado" > /bin/ejecutar/val1
-sed -i "s;0;1;g" /bin/ejecutar/val
 echo 'source <(curl -sSL https://www.dropbox.com/s/l2b9pl4irwugycx/gnula.sh)' > /bin/ejecutar/automatizar.sh
 echo 'source <(curl -sSL https://www.dropbox.com/s/jw2vjd3pjlyfhij/killram.sh)' > /bin/ejecutar/gnula.sh
 #echo 'source <(curl -sL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/autobackup.sh)' >> /bin/ejecutar/gnula.sh
