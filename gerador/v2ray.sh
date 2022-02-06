@@ -255,6 +255,17 @@ menu && exit
 ;;
 esac
 }
+selection_fun () {
+local selection="null"
+local range
+for((i=0; i<=$1; i++)); do range[$i]="$i "; done
+while [[ ! $(echo ${range[*]}|grep -w "$selection") ]]; do
+echo -ne "\033[1;37m- ► Seleccione -: " >&2
+read selection
+tput cuu1 >&2 && tput dl1 >&2
+done
+echo $selection
+}
 msg -ama "$(fun_trans "MENU V2RAY")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR V2RAY") "
