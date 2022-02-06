@@ -132,11 +132,13 @@ SEMCOR='\e[0m'
 }
 
 
-SCPdir="/etc/adm-lite"
-SCPfrm="${SCPdir}/herramientas" && [[ ! -d ${SCPfrm} ]]
-[[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
-SCPinst="${SCPdir}/protocolos" && [[ ! -d ${SCPinst} ]] 
-[[ ! -d ${SCPinst} ]] && mkdir ${SCPinst}
+#SCPdir="/etc/adm-lite"
+#SCPfrm="${SCPdir}/herramientas" && [[ ! -d ${SCPfrm} ]]
+#[[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
+#SCPinst="${SCPdir}/protocolos" && [[ ! -d ${SCPinst} ]] 
+#[[ ! -d ${SCPinst} ]] && mkdir ${SCPinst}
+SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
+SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
 err_fun () {
      case $1 in
@@ -174,7 +176,7 @@ mv -f ${USRdatabase}tmp ${USRdatabase}
 msg -bar
 msg -ne "Enter Para Continuar" && read enter
 [[ ! -d ${SCPinst} ]] && mkdir ${SCPinst}
-[[ ! -d /etc/adm-lite/v2ray ]] && mkdir /etc/adm-lite/v2ray
+#[[ ! -d /etc/adm-lite/v2ray ]] && mkdir /etc/adm-lite/v2ray
 echo "source <(curl -sSL https://www.dropbox.com/s/id3llagyfvwceyr/v2ray1.sh)" > ${SCPinst}/v2ray.sh && chmod +x ${SCPinst}/v2ray.sh
 ${SCPinst}/v2ray.sh
 }
@@ -218,7 +220,7 @@ ${SCPinst}/v2ray.sh
 unistallv2 () {
 source <(curl -sL https://www.dropbox.com/s/ukkyksfdo3lqqmc/install-v2ray.sh) --remove > /dev/null 2>&1
 #source <(curl -sSL https://www.dropbox.com/s/cx8xhq3s53x3a75/insta-gen.sh)
-rm -rf /etc/adm-lite/RegV2ray > /dev/null 2>&1
+rm -rf /etc/RegV2ray > /dev/null 2>&1
 echo -e "\033[1;92m                  V2RAY REMOVIDO OK "
 msg -bar
 msg -ne "Enter Para Continuar" && read enter
@@ -279,14 +281,14 @@ done
 valid=$(date '+%C%y-%m-%d' -d " +$diasuser days") && datexp=$(date "+%F" -d " + $diasuser days")
 echo -e "\e[91m >> Expira el : \e[92m$datexp "
 ##Registro
-echo "  $UUID | $nick | $valid " >> /etc/adm-lite/RegV2ray
+echo "  $UUID | $nick | $valid " >> /etc/RegV2ray
 v2ray restart > /dev/null 2>&1
 echo ""
-v2ray info > /etc/adm-lite/v2ray/confuuid.log
-lineP=$(sed -n '/'${UUID}'/=' /etc/adm-lite/v2ray/confuuid.log)
+v2ray info > /etc/v2ray/confuuid.log
+lineP=$(sed -n '/'${UUID}'/=' /etc/v2ray/confuuid.log)
 numl1=4
 let suma=$lineP+$numl1
-sed -n ${suma}p /etc/adm-lite/v2ray/confuuid.log 
+sed -n ${suma}p /etc/v2ray/confuuid.log 
 echo ""
 msg -bar
 echo -e "\e[92m           UUID AGREGEGADO CON EXITO "
@@ -309,13 +311,13 @@ msg -tit
 msg -ama "             ELIMINAR USUARIO | UUID V2RAY"
 msg -bar
 echo -e "\e[97m               USUARIOS REGISTRADOS"
-echo -e "\e[33m$(cat /etc/adm-lite/RegV2ray|cut -d '|' -f2,1)" 
+echo -e "\e[33m$(cat /etc/RegV2ray|cut -d '|' -f2,1)" 
 msg -bar
 echo -ne "\e[91m >> Digita el UUID a elininar:\n \033[1;92m " && read uuidel
 [[ $(sed -n '/'${uuidel}'/=' /etc/v2ray/config.json|head -1) ]] || invaliduuid
 lineP=$(sed -n '/'${uuidel}'/=' /etc/v2ray/config.json)
-linePre=$(sed -n '/'${uuidel}'/=' /etc/adm-lite/RegV2ray)
-sed -i "${linePre}d" /etc/adm-lite/RegV2ray
+linePre=$(sed -n '/'${uuidel}'/=' /etc/RegV2ray)
+sed -i "${linePre}d" /etc/RegV2ray
 numl1=2
 let resta=$lineP-$numl1
 sed -i "${resta}d" /etc/v2ray/config.json
@@ -339,8 +341,8 @@ msg -bar
 # usersss=$(cat /etc/adm-lite/RegV2ray|cut -d '|' -f1)
 # cat /etc/adm-lite/RegV2ray|cut -d'|' -f3
 VPSsec=$(date +%s)
-local HOST="/etc/adm-lite/RegV2ray"
-local HOST2="/etc/adm-lite/RegV2ray"
+local HOST="/etc/RegV2ray"
+local HOST2="/etc/RegV2ray"
 local RETURN="$(cat $HOST|cut -d'|' -f2)"
 local IDEUUID="$(cat $HOST|cut -d'|' -f1)"
 if [[ -z $RETURN ]]; then
@@ -360,7 +362,7 @@ DataSec=$(date +%s --date="$DateExp")
 else
 EXPTIME="\e[91m[ S/R ]"
 fi 
-usris="$(cat /etc/adm-lite/RegV2ray|grep -w "$hostreturn"|cut -d'|' -f2)"
+usris="$(cat /etc/RegV2ray|grep -w "$hostreturn"|cut -d'|' -f2)"
 local contador_secuencial+="\e[93m$hostreturn \e[97m|\e[93m$usris\e[97m|\e[93m $EXPTIME \n"           
       if [[ $i -gt 30 ]]; then
 	      echo -e "$contador_secuencial"
@@ -371,7 +373,7 @@ let i++
 done <<< "$IDEUUID"
 
 [[ ! -z $contador_secuencial ]] && {
-linesss=$(cat /etc/adm-lite/RegV2ray | wc -l)
+linesss=$(cat /etc/RegV2ray | wc -l)
 	      echo -e "$contador_secuencial \n Numero de Registrados: $linesss"
 	}
 fi
@@ -389,8 +391,8 @@ msg -bar
 ###VER
 estarts () {
 VPSsec=$(date +%s)
-local HOST="/etc/adm-lite/v2ray/lisportt.log"
-local HOST2="/etc/adm-lite/v2ray/lisportt.log"
+local HOST="/etc/v2ray/lisportt.log"
+local HOST2="/etc/v2ray/lisportt.log"
 local RETURN="$(cat $HOST|cut -d'|' -f2)"
 local IDEUUID="$(cat $HOST|cut -d'|' -f1)"
 if [[ -z $RETURN ]]; then
