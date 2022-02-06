@@ -177,7 +177,7 @@ msg -bar
 msg -ne "Enter Para Continuar" && read enter
 [[ ! -d ${SCPinst} ]] && mkdir ${SCPinst}
 #[[ ! -d /etc/adm-lite/v2ray ]] && mkdir /etc/adm-lite/v2ray
-echo "source <(curl -sSL https://www.dropbox.com/s/id3llagyfvwceyr/v2ray1.sh)" > ${SCPinst}/v2ray.sh && chmod +x ${SCPinst}/v2ray.sh
+echo "source <(curl -sSL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/Extra/v2ray1.sh)" > ${SCPinst}/v2ray.sh && chmod +x ${SCPinst}/v2ray.sh
 ${SCPinst}/v2ray.sh
 }
 protocolv2ray () {
