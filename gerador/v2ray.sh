@@ -271,11 +271,13 @@ echo -ne "\033[1;32m [11] > " && msg -azu "LIMPIADOR DE EXPIRADOS ------- $statg
 echo -ne "\033[1;32m [12] > " && msg -azu "V2RAY MANAGER "
 msg -bar && echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") "&& msg -bra "\033[1;41mREGRESAR AL MENU"
 msg -bar
-while [[ ${arquivoonlineadm} != @(0|[1-12]) ]]; do
-read -p "[0-12]: " arquivoonlineadm
-tput cuu1 && tput dl1
-done
-case $arquivoonlineadm in
+#while [[ ${arquivoonlineadm} != @(0|[1-12]) ]]; do
+#read -p "[0-12]: " arquivoonlineadm
+#tput cuu1 && tput dl1
+#done
+#case $arquivoonlineadm in
+selection=$(selection_fun 12)
+case ${selection} in
 1)intallv2ray;;
 2)protocolv2ray;;
 3)tls;;
