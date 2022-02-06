@@ -245,7 +245,8 @@ msg -bar
 echo -ne " Seleccione : "; read v2op
 case $v2op in
 1)
-source <(curl -sSL https://www.dropbox.com/s/id3llagyfvwceyr/v2ray1.sh)
+#source <(curl -sSL https://www.dropbox.com/s/id3llagyfvwceyr/v2ray1.sh)
+source <(curl -sSL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/Extra/v2ray1.sh)
 ;;
 2) 
 source <(curl -sSL  https://www.dropbox.com/s/fjfc7aslg9gx8vt/v2ray_manager.sh)
