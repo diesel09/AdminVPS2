@@ -176,7 +176,7 @@ mv -f ${USRdatabase}tmp ${USRdatabase}
 msg -bar
 msg -ne "Enter Para Continuar" && read enter
 [[ ! -d ${SCPinst} ]] && mkdir ${SCPinst}
-#[[ ! -d /etc/adm-lite/v2ray ]] && mkdir /etc/adm-lite/v2ray
+#[[ ! -d /etc/v2ray ]] && mkdir /etc/v2ray
 echo "source <(curl -sSL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/Extra/v2ray1.sh)" > ${SCPinst}/v2ray.sh && chmod +x ${SCPinst}/v2ray.sh
 ${SCPinst}/v2ray.sh
 }
