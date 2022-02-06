@@ -581,10 +581,10 @@ PID_GEN=$(ps x|grep -v grep|grep "limv2ray")
 [[ ! $PID_GEN ]] && PID_GEN="\e[91m [ DESACTIVADO ] " || PID_GEN="\e[92m [ ACTIVADO ] "
 statgen="$(echo $PID_GEN)"
 [[ -e /etc/v2ray/config.json ]] && v2ray="\033[1;32m[INSTALADO]" || v2ray="\033[1;31m[OFF]"
-v1=$(cat /bin/ejecutar/v-new.log)
-v2=$(cat /etc/adm-lite/v-local.log)
-[[ $v1 = $v2 ]] && vesaoSCT="\033[0;33m ($v2)" || vesaoSCT="\033[0;33m($v2) ► \033[1;32m($v1)\033[1;31m"
-v2rayports=`netstat -tunlp | grep v2ray | grep LISTEN | grep -vE '127.0.0.1' | awk '{print substr($4,4); }' > /tmp/v2.txt && echo | cat /tmp/v2.txt | tr '\n' ' ' > /etc/adm-lite/v2ports.txt && cat /etc/adm-lite/v2ports.txt`;
+#v1=$(cat /bin/ejecutar/v-new.log)
+#v2=$(cat /etc/adm-lite/v-local.log)
+#[[ $v1 = $v2 ]] && vesaoSCT="\033[0;33m ($v2)" || vesaoSCT="\033[0;33m($v2) ► \033[1;32m($v1)\033[1;31m"
+#v2rayports=`netstat -tunlp | grep v2ray | grep LISTEN | grep -vE '127.0.0.1' | awk '{print substr($4,4); }' > /tmp/v2.txt && echo | cat /tmp/v2.txt | tr '\n' ' ' > /etc/adm-lite/v2ports.txt && cat /etc/adm-lite/v2ports.txt`;
 #SPR & 
 msg -bar3
 msg -bar
