@@ -239,9 +239,9 @@ msg -bar
 echo -ne "\033[1;37m 
  1)- V2ray Manager by @kalix 
  2)- V2ray Manager by @Rufu99
-msg -bar
+============================
  0)- Salir \n" | lolcat
-msg -bar
+
 echo -ne " Seleccione : "; read v2op
 case $v2op in
 1)
