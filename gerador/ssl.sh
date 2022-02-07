@@ -356,9 +356,9 @@ certif(){
  }
  clear
  if netstat -tnlp |grep 'stunnel4' &>/dev/null; then
- stunel="\\e[32m[ ON ]"
+ stunel="[ ON ]"
  else
- stunel="\\e[31m[ OFF ]"
+ stunel="[ OFF ]"
  fi
 clear
 msg -bar
