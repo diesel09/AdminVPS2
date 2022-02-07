@@ -27,7 +27,7 @@ intallv2ray () {
 #apt install python-pip -y
 #python -m pip install pip==18.1
 #python -m pip install -U pip
-apt install python3.7 -y &>/dev/null
+apt install python3.7 -y
 apt install python3-pip -y 
 apt install python-pip -y
 #source <(curl -sL https://raw.githubusercontent.com/diesel09/v2raynew/main/v2ray.sh)
