@@ -190,6 +190,21 @@ msg -verm "Procedimiento Cancelado: "
 msg -bar
 fi
 }
+unistall(){
+ clear
+ msg -bar
+ msg -ama "DETENIENDO SERVICIOS SSL Y PYTHON"
+ msg -bar
+ service stunnel4 stop > /dev/null 2>&1
+ apt-get purge stunnel4 -y &>/dev/null
+ apt-get purge stunnel -y &>/dev/null
+ kill -9 $(ps aux |grep -v grep |grep -w "proxy.py"|grep dmS|awk '{print $2}') &>/dev/null
+ #rm /etc/VPS-MX/PySSL.log &>/dev/null
+ clear
+ msg -bar
+ msg -verd "LOS SERVICIOS SE HAN DETENIDO"
+ msg -bar
+ }
 certif(){
  [[ $(mportas|grep stunnel4|head -1) ]] && {
  echo -e "\\033[1;33m $(fun_trans  "Deteniendo Stunnel")"
