@@ -164,8 +164,8 @@ return 0
 }
 # SSLWS
 ssl_py () {
-cd $HOME
-tput cuu1 && tput dl1
+#cd $HOME
+#tput cuu1 && tput dl1
 msg -bar
 msg -ama "HOLA! \033[1;32m[ EJECUTANDO ]  \033[1;33m[\033[1;34m WEBSOCKET \033[1;33m] \033[1;31m[\033[1;37m AUTOCONFIGURACION\033[1;31m]"
 echo " "
@@ -183,7 +183,7 @@ msg -verm "Perfecto, Iniciando Configuracion: "
 echo " "
 echo -e " \033[1;32m[ Adquiera este Script en: ] "
 echo -e " \033[1;32m[ Telegram: @KeyVpspremium_bot ] "
-wget wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh; chmod 777 payssl.sh; ./payssl.sh
+wget https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/payssl.sh; chmod 777 payssl.sh; ./payssl.sh
 msg -bar
 else
 msg -verm "Procedimiento Cancelado: "
