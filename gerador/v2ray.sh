@@ -85,7 +85,7 @@ echo -ne "\e[91m >> Digita un Nombre: \033[1;92m"
      err_fun 17 && continue
      elif [[ "${#nick}" -lt "2" ]]; then
      err_fun 2 && continue
-     elif [[ "${#nick}" -gt "5" ]]; then
+     elif [[ "${#nick}" -gt "10" ]]; then
      err_fun 3 && continue
      fi
      break
@@ -183,10 +183,10 @@ else
 EXPTIME="\e[91m[ S/R ]"
 fi 
 usris="$(cat /etc/RegV2ray|grep -w "$hostreturn"|cut -d'|' -f2)"
-local contador_secuencial+="\e[93m$hostreturn \e[97m|\e[93m$usris\e[97m|\e[93m $EXPTIME \n"
-local contador_secuencial+="\e[93m$usris\e[97m"
-local contador_secuencial+="\e[93m $EXPTIME \n"
-local contador_secuencial+="\e[93m$hostreturn \e[97m| \n \e[93m$usris\e[97m| \n \e[93m $EXPTIME \n"
+#local contador_secuencial+="\e[93m$hostreturn \e[97m|\e[93m$usris\e[97m|\e[93m $EXPTIME \n"
+#local contador_secuencial+="\e[93m$usris\e[97m"
+#local contador_secuencial+="\e[93m $EXPTIME \n"
+local contador_secuencial+="\e[93mUUID: $hostreturn \e[97m| \n \e[93mUSUARIO: $usris\e[97m| \n \e[93mEXPIRACION: $EXPTIME \n"
       if [[ $i -gt 30 ]]; then
 
 	      echo -e "$contador_secuencial"
