@@ -369,7 +369,8 @@ msg -bar
 echo "1).- INSTALAR | DETENER SSL $stunel "
 echo "2).- AGREGAR OTRO PUERTO SSL   "
 echo "3).- WEBSOCKET (AUTO CONFIGURACION)   "
-echo "4).- CERTIFICADO SSL/TLS   "
+echo "4).- DETENER SERVICIO WEBSOCKET   "
+echo "5).- CERTIFICADO SSL/TLS   "
 msg -bar && echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") "&& msg -bra "\033[1;41mREGRESAR AL MENU"
 msg -bar
 echo -n "Seleccione una opcion: "
@@ -391,7 +392,7 @@ ssl_py
 sleep 3
 exit
 ;;
-4)
+5)
  clear
  msg -bar
  msg -ama "	CERTIFICADO"
