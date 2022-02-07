@@ -198,7 +198,7 @@ done <<< "$IDEUUID"
 
 [[ ! -z $contador_secuencial ]] && {
 linesss=$(cat /etc/RegV2ray | wc -l)
-	      echo -e "$contador_secuencial \n Numero de Registrados: $linesss"
+	      echo -e "$contador_secuencial \n Usuarios Registrados: $linesss"
 	}
 fi
 msg -bar
