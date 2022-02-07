@@ -392,6 +392,7 @@ ssl_py
 sleep 3
 exit
 ;;
+4) unistall ;;
 5)
  clear
  msg -bar
