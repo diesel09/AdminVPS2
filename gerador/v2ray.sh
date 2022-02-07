@@ -172,7 +172,7 @@ ${SCPinst}/v2ray.sh
 
 else
 i=1
-echo -e "\e[97m                 UUID                | USER | EXPIRACION \e[93m"
+echo -e "\e[97m      UUID     |   USER   |   EXPIRACION   \e[93m"
 msg -bar
 while read hostreturn ; do
 DateExp="$(cat /etc/RegV2ray|grep -w "$hostreturn"|cut -d'|' -f3)"
