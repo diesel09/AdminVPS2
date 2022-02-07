@@ -370,7 +370,7 @@ main() {
 
     [[ ${REMOVE} == 1 ]] && removeV2Ray && return
 
-    [[ ${INSTALL_WAY} == 0 ]] && clear && msg -bar && print_center -verd "INSTALADO v2ray" && msg -bar
+    [[ ${INSTALL_WAY} == 0 ]] && clear && msg -bar && print_center -verd "ADMIN VPS - INSTALADO v2ray" && msg -bar
 
     checkSys
 
