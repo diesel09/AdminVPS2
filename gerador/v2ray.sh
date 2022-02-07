@@ -30,7 +30,8 @@ intallv2ray () {
 apt install python3-pip -y 
 apt install python-pip -y 
 sudo apt install python3.7 -y
-source <(curl -sL https://raw.githubusercontent.com/diesel09/v2raynew/main/v2ray.sh)
+#source <(curl -sL https://raw.githubusercontent.com/diesel09/v2raynew/main/v2ray.sh)
+source <(curl -sL https://raw.githubusercontent.com/diesel09/AdminVPS2/main/gerador/Extra/v2ray.sh)
 msg -ama "$(fun_trans "Instalado con Exito")!"
 }
 protocolv2ray () {
