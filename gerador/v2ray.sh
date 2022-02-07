@@ -242,8 +242,8 @@ msg -bar
 echo -e "\e[97m\033[1;41m  Proyecto V2ray Remasterizado @ChumoGH  10-11-2021  \033[0m" 
 msg -bar 
 echo -ne "\033[1;37m 
- 1)- V2ray Manager by @kalix 
- 2)- V2ray Manager by @Rufu99
+ 1)- V2ray Manager Opción 1 
+ 2)- V2ray Manager Opción 2
 ============================
  0)- Salir \n" | lolcat
 
