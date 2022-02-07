@@ -20,7 +20,7 @@ fun_bar () {
           echo -ne "\033[1;34m#"
           sleep 0.2s
           done
-         #[[ -e $HOME/fim ]] && rm $HOME/fim && break
+         [[ -e $HOME/fim ]] && rm $HOME/fim && break
          echo -e "${col5}"
          sleep 1s
          tput cuu1
@@ -30,10 +30,8 @@ fun_bar () {
          echo -e "\033[1;35m]\033[1;37m -\033[1;32m INSTALADO !\033[1;37m"
          tput cnorm
 		 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
-        }
-        
-
-clear&&clear
+        }       
+clear
 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
 echo -e "\033[1;32m            PAYLOAD + SSL | ADMIN VPS "
 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
