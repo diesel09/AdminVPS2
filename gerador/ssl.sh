@@ -354,22 +354,19 @@ certif(){
  msg -bar
  fi
  }
- 
- 
  clear
  if netstat -tnlp |grep 'stunnel4' &>/dev/null; then
  stunel="\\e[32m[ ON ]"
  else
  stunel="\\e[31m[ OFF ]"
  fi
-
 clear
 msg -bar
 echo -e "${cor[3]}       INSTALADOR MONO Y MULTI SSL"
 msg -bar
 echo -e "${cor[1]} Escoja la opcion deseada."
 msg -bar
-echo "1).- INSTALAR | DETENER SSL "
+echo "1).- INSTALAR | DETENER SSL $stunel "
 echo "2).- AGREGAR OTRO PUERTO SSL   "
 echo "3).- WEBSOCKET (AUTO CONFIGURACION)   "
 echo "4).- CERTIFICADO SSL/TLS   "
