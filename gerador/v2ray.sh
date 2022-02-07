@@ -186,7 +186,7 @@ usris="$(cat /etc/RegV2ray|grep -w "$hostreturn"|cut -d'|' -f2)"
 #local contador_secuencial+="\e[93m$hostreturn \e[97m|\e[93m$usris\e[97m|\e[93m $EXPTIME \n"
 #local contador_secuencial+="\e[93m$usris\e[97m"
 #local contador_secuencial+="\e[93m $EXPTIME \n"
-local contador_secuencial+="\e[93mUUID: $hostreturn \e[97m| \n \e[93mUSUARIO: $usris\e[97m| \n \e[93mEXPIRACION: $EXPTIME \n"
+local contador_secuencial+="\e[92mUUID:\e[93m $hostreturn \e[97m| \n \e[92mUSUARIO:\e[93m $usris \n \e[92mEXPIRACION:\e[97m $EXPTIME \n"
       if [[ $i -gt 30 ]]; then
 
 	      echo -e "$contador_secuencial"
