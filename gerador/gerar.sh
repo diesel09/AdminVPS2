@@ -4,6 +4,11 @@ clear
 [[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh C-SSR.sh Crear-Demo.sh optimizar.sh PDirect.py PGet.py POpen.py PPriv.py PPub.py Shadowsocks-R.sh Shadowsocks-libev.sh Unlock-Pass-VULTR.sh apacheon.sh blockBT.sh budp.sh dns-netflix.sh   dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh ports.sh shadowsocks.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes utils.sh v2ray.sh v2ui.sh trojanserver.sh panelweb.sh vnc payssl.sh sdns.sh sw.sh"
 SCPT_DIR="/etc/SCRIPT"
 IVAR="/etc/http-instas"
+myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`; 
+myint=`ifconfig | grep -B1 "inet addr:$myip" | head -n1 | awk '{print $1}'`; 
+rm -rf /etc/localtime &>/dev/null 
+ln -s /usr/share/zoneinfo/America/Chihuahua /etc/localtime &>/dev/null 
+rm -rf /usr/local/lib/systemubu1 &> /dev/null 
 BARRA="\033[1;36m-----------------------------------------------------\033[0m"
 BARRA2="\033[1;35m=====================================================\033[0m"
 _hora=$(printf '%(%H:%M:%S)T') 
