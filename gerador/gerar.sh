@@ -2,8 +2,7 @@
 # MODD BY: DESARROLLADOR
 
 clear
-[[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || 
-BASICINST="ADMbot.sh apacheon.sh blockBT.sh budp.sh Crear-Demo.sh C-SSR.sh dns-netflix.sh dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh PDirect.py PGet.py POpen.py ports.sh PPriv.py PPub.py shadowsocks.sh Shadowsocks-libev.sh Shadowsocks-R.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost Unlock-Pass-VULTR.sh usercodes utils.sh v2ray.sh"
+[[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh C-SSR.sh Crear-Demo.sh optimizar.sh PDirect.py PGet.py POpen.py PPriv.py PPub.py Shadowsocks-R.sh Shadowsocks-libev.sh Unlock-Pass-VULTR.sh apacheon.sh blockBT.sh budp.sh dns-netflix.sh   dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh ports.sh shadowsocks.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh tcp.sh ultrahost usercodes utils.sh v2ray.sh v2ui.sh trojanserver.sh panelweb.sh vnc payssl.sh sdns.sh sw.sh"
 IVAR="/etc/http-instas"
 mine_port4 () {
 PT=$(lsof -V -i tcp -P -n | grep -v "ESTABLISHED" |grep -v "COMMAND" | grep "LISTEN")
@@ -20,7 +19,7 @@ mine_port4
 echo -e "$BARRA"
 cat << EOF
 
-           KEY GENERADOR : 🐲𝐎𝐖𝐍𝐄𝐑 : 𝐆𝐇𝐎𝐒𝐓🐲          
+           KEY GENERADOR : 🐲@FelipeCouoh🐲          
            INSTALACIONES: $(cat $IVAR)
            
 EOF
