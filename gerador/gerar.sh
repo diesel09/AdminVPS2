@@ -66,7 +66,7 @@ fi
 done
 }
 bot_menu () {
-source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/confbot.sh)
+source <(curl -sSL https://raw.githubusercontent.com/diesel09/VPSB/main/confbot.sh)
 }
 fun_list () {
 rm ${SCPT_DIR}/*.x.c &> /dev/null
