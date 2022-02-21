@@ -1,0 +1,758 @@
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 4.15.0-167-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Feb 21 11:07:22 CST 2022
+
+  System load:  0.0                Processes:             95
+  Usage of /:   12.0% of 23.40GB   Users logged in:       0
+  Memory usage: 24%                IP address for enp1s0: 216.238.83.154
+  Swap usage:   0%
+
+
+0 updates can be applied immediately.
+
+
+Last login: Fri Feb 18 08:13:29 2022 from 189.174.139.25
+root@Prueba:~# menu
+
+Command 'menu' not found, did you mean:
+
+  command '9menu' from deb 9menu
+  command 'dmenu' from deb suckless-tools
+  command 'qmenu' from deb qmenu
+
+Try: apt install <deb name>
+
+root@Prueba:~# apt-get update -y; apt-get upgrade -y; wget https://www.dropbox.com/s/7xuam6nvys00cxi/menu.sh; chmod 777 menu.sh; ./menu.sh
+Hit:1 http://us.archive.ubuntu.com/ubuntu xenial InRelease
+Get:2 http://us.archive.ubuntu.com/ubuntu xenial-updates InRelease [99.8 kB]
+Get:3 http://security.ubuntu.com/ubuntu xenial-security InRelease [99.8 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial-backports InRelease [97.4 kB]
+Fetched 297 kB in 1s (473 kB/s)
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+--2022-02-21 11:08:52--  https://www.dropbox.com/s/7xuam6nvys00cxi/menu.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620--2022-02-21 11:08:53--  https://www.dropbox.com/s/kem6a7pkvhyv169/auto.sh                                                        Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812                                           Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.                                                   HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/kem6a7pkvhyv169/auto.sh [following]
+--2022-02-21 11:08:53--  https://www.dropbox.com/s/raw/kem6a7pkvhyv169/auto.sh                                                    Reusing existing connection to www.dropbox.com:443.              HTTP request sent, awaiting response... 302 Found                Location: https://uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com/cd/0/inline/BgLqxnW8jRgJJtnIg6QHpKnlJtJHulX8o5hh_AsTnTZVEM49kR4TZvC5u_0LpW69Zdqli5Y2OWWk8Vb72MYbgpKPBj7Sm6fs65raZNrOJPyrPQarvqqI0IiRJE7XO3aWaj9uNp_ruvPu_PkYICGbonSu/file# [following]     --2022-02-21 11:08:54--  https://uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com/cd/0/inline/BgLqxnW8jRgJJtnIg6QHpKnlJtJHulX8o5hh_AsTnTZVEM49kR4TZvC5u_0LpW69Zdqli5Y2OWWk8Vb72MYbgpKPBj7Sm6fs65raZNrOJPyrPQarvqqI0IiRJE7XO3aWaj9uNp_ruvPu_PkYICGbonSu/file
+Resolving uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com (uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com (uc58c49281d5bab739b0291bb4af.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'auto.sh'
+
+auto.sh              [ <=>    ]  23.20K  --.-KB/s    in 0.02s
+
+2022-02-21 11:08:54 (1.18 MB/s) - 'auto.sh' saved [23760]
+
+--2022-02-21 11:08:54--  https://www.dropbox.com/s/ymvtjqfpplvrv7f/desis.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/ymvtjqfpplvrv7f/desis.sh [following]
+--2022-02-21 11:08:55--  https://www.dropbox.com/s/raw/ymvtjqfpplvrv7f/desis.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com/cd/0/inline/BgL891StYhhjIQ1XGXQBPIOlgNWN2vJhgIR8axth1wJ78rfwwMGSXRcbwJDY3P8ZieWNkiquSd92xCQBucYGmxXyPsF4okUPgtCIu2JGpJ3ZyLNqmenpOFtxqKRGzQdexjso8lAwV8427YC1FgFofB_t/file# [following]
+--2022-02-21 11:08:55--  https://uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com/cd/0/inline/BgL891StYhhjIQ1XGXQBPIOlgNWN2vJhgIR8axth1wJ78rfwwMGSXRcbwJDY3P8ZieWNkiquSd92xCQBucYGmxXyPsF4okUPgtCIu2JGpJ3ZyLNqmenpOFtxqKRGzQdexjso8lAwV8427YC1FgFofB_t/file
+Resolving uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com (uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com (uc4cb7cd5977a8db32a672884d24.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'desis.sh'
+
+desis.sh             [ <=>    ]  10.59K  --.-KB/s    in 0s
+
+2022-02-21 11:08:55 (148 MB/s) - 'desis.sh' saved [10840]
+
+--2022-02-21 11:08:55--  https://www.dropbox.com/s/m8muc2akk791swj/d.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/m8muc2akk791swj/d.sh [following]
+--2022-02-21 11:08:56--  https://www.dropbox.com/s/raw/m8muc2akk791swj/d.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com/cd/0/inline/BgJ2ws9c7FmGiPPMCu1hoVopR6JFfZc_jv5pPUh-BVs8XaEw_6eKhEauCIlWxjwENJSW7Sa6ow8ef4yZspc1vYmGYKZh6-pTWAeMe9K60kiP8YQ440KwrB5rZEBDB3LtAS8NF-wlV6T2MwuXcKdqjC8t/file# [following]
+--2022-02-21 11:08:56--  https://uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com/cd/0/inline/BgJ2ws9c7FmGiPPMCu1hoVopR6JFfZc_jv5pPUh-BVs8XaEw_6eKhEauCIlWxjwENJSW7Sa6ow8ef4yZspc1vYmGYKZh6-pTWAeMe9K60kiP8YQ440KwrB5rZEBDB3LtAS8NF-wlV6T2MwuXcKdqjC8t/file
+Resolving uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com (uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com (uc43140afa8da150074f4d4fd409.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'd.sh'
+
+d.sh                 [ <=>    ]  22.06K  --.-KB/s    in 0.02s
+
+2022-02-21 11:08:56 (1.17 MB/s) - 'd.sh' saved [22592]
+
+--2022-02-21 11:08:56--  https://www.dropbox.com/s/10bwk86sh0970ue/au.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/10bwk86sh0970ue/au.sh [following]
+--2022-02-21 11:08:57--  https://www.dropbox.com/s/raw/10bwk86sh0970ue/au.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com/cd/0/inline/BgJ12wZk5ctTuCCXZyMwGzcA9svjtNAIHSEZTqH4PBD5s3AoczfC9064GI1xkl4K4sPY-xzWMCvbRsiu5AOL7xAUS6Np_b7D0x7CjulkFajBVVrU2UOWJ17AJ9ziVuDAdDIZo3UpCSbpPxoug6Ev-sXZ/file# [following]
+--2022-02-21 11:08:57--  https://uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com/cd/0/inline/BgJ12wZk5ctTuCCXZyMwGzcA9svjtNAIHSEZTqH4PBD5s3AoczfC9064GI1xkl4K4sPY-xzWMCvbRsiu5AOL7xAUS6Np_b7D0x7CjulkFajBVVrU2UOWJ17AJ9ziVuDAdDIZo3UpCSbpPxoug6Ev-sXZ/file
+Resolving uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com (uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com (uc29d2cf4c0da454cde48f829b4c.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'au.sh'
+
+au.sh                [ <=>    ]  11.98K  --.-KB/s    in 0s
+
+2022-02-21 11:08:58 (251 MB/s) - 'au.sh' saved [12272]
+
+--2022-02-21 11:08:58--  https://www.dropbox.com/s/uu99u7ixaz1zln7/dd.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/uu99u7ixaz1zln7/dd.sh [following]
+--2022-02-21 11:08:58--  https://www.dropbox.com/s/raw/uu99u7ixaz1zln7/dd.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com/cd/0/inline/BgID7oEzTj47gMsO2RJYljA-WMkHSqz9cq8062MB6_Mjg1_KOskip2RmwhAWSg-ZITBFTZibIPfz7mEijlPFuQdTdygGQ41IYmhUOf9WF0BFJi69ExYcRfPfWPatPo7Dvlrk1wJr74BLg9aQ4Azw9vAp/file# [following]
+--2022-02-21 11:08:58--  https://ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com/cd/0/inline/BgID7oEzTj47gMsO2RJYljA-WMkHSqz9cq8062MB6_Mjg1_KOskip2RmwhAWSg-ZITBFTZibIPfz7mEijlPFuQdTdygGQ41IYmhUOf9WF0BFJi69ExYcRfPfWPatPo7Dvlrk1wJr74BLg9aQ4Azw9vAp/file
+Resolving ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com (ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com (ucd89134af1726ac0a1a8b3eeec6.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'dd.sh'
+
+dd.sh                [ <=>    ]  20.55K  --.-KB/s    in 0.02s
+
+2022-02-21 11:08:59 (1.18 MB/s) - 'dd.sh' saved [21048]
+
+--2022-02-21 11:08:59--  https://www.dropbox.com/s/uyccy3b8gpyz4gd/autoiniciossl.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/uyccy3b8gpyz4gd/autoiniciossl.sh [following]
+--2022-02-21 11:08:59--  https://www.dropbox.com/s/raw/uyccy3b8gpyz4gd/autoiniciossl.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com/cd/0/inline/BgI34EZijASLZyCRLCB8N-GdY6PFMW3NyGhLDrcxrYNDMi8loM2v-pyyW7SiIwtlr8eyWYLOQHkLTdu5fQWLj6DJhVWEOePAyLiXCCaZuVg4fVSAw-OGWeCEpEejUjlDaiyjYN5o3NFpzDIdoD81lZR3/file# [following]
+--2022-02-21 11:08:59--  https://ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com/cd/0/inline/BgI34EZijASLZyCRLCB8N-GdY6PFMW3NyGhLDrcxrYNDMi8loM2v-pyyW7SiIwtlr8eyWYLOQHkLTdu5fQWLj6DJhVWEOePAyLiXCCaZuVg4fVSAw-OGWeCEpEejUjlDaiyjYN5o3NFpzDIdoD81lZR3/file
+Resolving ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com (ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com (ucb7701b539a81fa9618b942f097.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'autoiniciossl.sh'
+
+autoiniciossl.sh     [ <=>    ]  10.70K  --.-KB/s    in 0s
+
+2022-02-21 11:09:00 (222 MB/s) - 'autoiniciossl.sh' saved [10960]
+--2022-02-21 11:09:00--  https://www.dropbox.com/s/trjosx1t0w9slcp/amor2.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/trjosx1t0w9slcp/amor2.sh [following]
+--2022-02-21 11:09:00--  https://www.dropbox.com/s/raw/trjosx1t0w9slcp/amor2.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com/cd/0/inline/BgIJe-S6UdZOGWu9amXhS-CbmwSqmSKwKdU10Jn9WFpAOxu5yEcPPwT5KpZWiYaKkIBpo2r34xCHpLc2kZeZfl2zCrGjPWDa8-OjM8wv6jaTdwa02RhXbHuMWf4DQfTfmXQ-OxpZRLk7XKM3neBzTlVw/file# [following]
+--2022-02-21 11:09:00--  https://uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com/cd/0/inline/BgIJe-S6UdZOGWu9amXhS-CbmwSqmSKwKdU10Jn9WFpAOxu5yEcPPwT5KpZWiYaKkIBpo2r34xCHpLc2kZeZfl2zCrGjPWDa8-OjM8wv6jaTdwa02RhXbHuMWf4DQfTfmXQ-OxpZRLk7XKM3neBzTlVw/file
+Resolving uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com (uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com (uc0d0931ff1d95250b8c5240eabd.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'amor2.sh'
+
+amor2.sh             [ <=>    ]  12.17K  --.-KB/s    in 0s
+
+2022-02-21 11:09:01 (186 MB/s) - 'amor2.sh' saved [12464]
+
+--2022-02-21 11:09:01--  https://www.dropbox.com/s/bv8e1f0wznuqwfk/instalarssl.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/bv8e1f0wznuqwfk/instalarssl.sh [following]
+--2022-02-21 11:09:01--  https://www.dropbox.com/s/raw/bv8e1f0wznuqwfk/instalarssl.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com/cd/0/inline/BgILXDw78sEYZriucTSSFPozP4thHuTVb629kaQ5DwrN_cd_qajEQgeo_OBRI5Oy0wsLY_yKsQX_F3VSz851KW_stIcMQr6Z1Cl9ocdrlnV9dMLFiJwMamiAl3IWXWnlYCuVdcv6cpJB2-lKXK5kvrhW/file# [following]
+--2022-02-21 11:09:01--  https://uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com/cd/0/inline/BgILXDw78sEYZriucTSSFPozP4thHuTVb629kaQ5DwrN_cd_qajEQgeo_OBRI5Oy0wsLY_yKsQX_F3VSz851KW_stIcMQr6Z1Cl9ocdrlnV9dMLFiJwMamiAl3IWXWnlYCuVdcv6cpJB2-lKXK5kvrhW/file
+Resolving uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com (uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com (uc17fdb2cc7a72ebf0e4ef6b18e9.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'instalarssl.sh'
+
+instalarssl.sh       [ <=>    ]  11.73K  --.-KB/s    in 0s
+
+2022-02-21 11:09:02 (207 MB/s) - 'instalarssl.sh' saved [12016]
+
+--2022-02-21 11:09:02--  https://www.dropbox.com/s/olkk3hlvizs2z06/sl.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/olkk3hlvizs2z06/sl.sh [following]
+--2022-02-21 11:09:02--  https://www.dropbox.com/s/raw/olkk3hlvizs2z06/sl.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com/cd/0/inline/BgLmNwYNBN6hBcFpZMABtnNMT_m6JRBYb11v0AG4YXZZuXG5fOTWWDdEQADAMCxvSec02QajUeX7WHpTaXc7YzibCLS8uIxtZXElD6WR7RyGs2q2qviX1m3SgJaKR7HHnuppNz81s96htgVAxIaxEq3Y/file# [following]
+--2022-02-21 11:09:02--  https://uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com/cd/0/inline/BgLmNwYNBN6hBcFpZMABtnNMT_m6JRBYb11v0AG4YXZZuXG5fOTWWDdEQADAMCxvSec02QajUeX7WHpTaXc7YzibCLS8uIxtZXElD6WR7RyGs2q2qviX1m3SgJaKR7HHnuppNz81s96htgVAxIaxEq3Y/file
+Resolving uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com (uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com (uc5e0778f6c52d523620e6d5a3ec.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'sl.sh'
+
+sl.sh                [ <=>    ]  15.20K  --.-KB/s    in 0s
+
+2022-02-21 11:09:02 (162 MB/s) - 'sl.sh' saved [15560]
+
+--2022-02-21 11:09:02--  https://www.dropbox.com/s/mp0sy8poysmdye5/y.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/mp0sy8poysmdye5/y.sh [following]
+--2022-02-21 11:09:03--  https://www.dropbox.com/s/raw/mp0sy8poysmdye5/y.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com/cd/0/inline/BgJNXrdI2eI-v58TCRhMeDe9oQJZmDphPihBC-5mWTENrv4icCAcOix2Yu47im-F9yFfKJH1n8VxTO6uPWkKkgqHQNdZAt60THkSAo1fRbXYhrSbGFS_WtAO6eJpXSjJp_krwLJYe5g6vkptH5skIH4D/file# [following]
+--2022-02-21 11:09:03--  https://ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com/cd/0/inline/BgJNXrdI2eI-v58TCRhMeDe9oQJZmDphPihBC-5mWTENrv4icCAcOix2Yu47im-F9yFfKJH1n8VxTO6uPWkKkgqHQNdZAt60THkSAo1fRbXYhrSbGFS_WtAO6eJpXSjJp_krwLJYe5g6vkptH5skIH4D/file
+Resolving ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com (ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com (ucc976f4231d9392e3d109d547ff.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'y.sh'
+
+y.sh                 [ <=>    ]  11.27K  --.-KB/s    in 0s
+
+2022-02-21 11:09:03 (134 MB/s) - 'y.sh' saved [11536]
+
+--2022-02-21 11:09:03--  https://www.dropbox.com/s/ms1tm44qs4h5lbd/ap.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/ms1tm44qs4h5lbd/ap.sh [following]
+--2022-02-21 11:09:04--  https://www.dropbox.com/s/raw/ms1tm44qs4h5lbd/ap.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com/cd/0/inline/BgIgKaQVTHOgzJlfnzczHrYjIbgWlEGUrzDZDi3rtYQ3Hu2bU6ro_H3tzcRUPtWUtGquoul851jIuKAVF8-3GqxKSfAucUmZcdKUTC6H-xPwuKBxmjk-gTBiAHXaXijql37EwUaMjhPy3DXiq07vog4P/file# [following]
+--2022-02-21 11:09:04--  https://ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com/cd/0/inline/BgIgKaQVTHOgzJlfnzczHrYjIbgWlEGUrzDZDi3rtYQ3Hu2bU6ro_H3tzcRUPtWUtGquoul851jIuKAVF8-3GqxKSfAucUmZcdKUTC6H-xPwuKBxmjk-gTBiAHXaXijql37EwUaMjhPy3DXiq07vog4P/file
+Resolving ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com (ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com (ucc9963f5aca37c6526fe40243c4.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'ap.sh'
+
+ap.sh                [ <=>    ]  11.27K  --.-KB/s    in 0s
+
+2022-02-21 11:09:04 (206 MB/s) - 'ap.sh' saved [11536]
+
+--2022-02-21 11:09:04--  https://www.dropbox.com/s/1n1rhr8s9j9meuo/fg.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/1n1rhr8s9j9meuo/fg.sh [following]
+--2022-02-21 11:09:05--  https://www.dropbox.com/s/raw/1n1rhr8s9j9meuo/fg.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com/cd/0/inline/BgKqZHADSjXWIdKEwG9T8rI5tmX-mNZd38LhRc-JKEhac12ZOook3ysm1u7k77U_LX6vQh_MnxV0qtUzmD5TKJgph51-4dfvkIaeETNelvKIp7JJKCCML_Wj4UmKOUO3T8R31x3KwntbHgvf755l_qvc/file# [following]
+--2022-02-21 11:09:05--  https://uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com/cd/0/inline/BgKqZHADSjXWIdKEwG9T8rI5tmX-mNZd38LhRc-JKEhac12ZOook3ysm1u7k77U_LX6vQh_MnxV0qtUzmD5TKJgph51-4dfvkIaeETNelvKIp7JJKCCML_Wj4UmKOUO3T8R31x3KwntbHgvf755l_qvc/file
+Resolving uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com (uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com (uc6c4a9c002e71eb2c7c92921fb9.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'fg.sh'
+
+fg.sh                [ <=>    ]  10.67K  --.-KB/s    in 0s
+
+2022-02-21 11:09:05 (176 MB/s) - 'fg.sh' saved [10928]
+
+--2022-02-21 11:09:05--  https://www.dropbox.com/s/l07its4u82vq1ie/jls.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/l07its4u82vq1ie/jls.sh [following]
+--2022-02-21 11:09:05--  https://www.dropbox.com/s/raw/l07its4u82vq1ie/jls.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com/cd/0/inline/BgIGcNg-AC5Jp9M0_pAkSEi5E4DWx7WJldk-rsHef7zSKEDKWirbF1Xa3ZmGAmax3Mk0D50aOBe9bCIOwpMCA0royvpW6Ait51JI3RTdaCoBGz7g4VaDbnLtPZb-WxBmHlFNks2oskwpzaMttjsW0AW5/file# [following]
+--2022-02-21 11:09:06--  https://uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com/cd/0/inline/BgIGcNg-AC5Jp9M0_pAkSEi5E4DWx7WJldk-rsHef7zSKEDKWirbF1Xa3ZmGAmax3Mk0D50aOBe9bCIOwpMCA0royvpW6Ait51JI3RTdaCoBGz7g4VaDbnLtPZb-WxBmHlFNks2oskwpzaMttjsW0AW5/file
+Resolving uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com (uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com (uc5334ff12c15a9d0a8fa76b9d08.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'jls.sh'
+
+jls.sh               [ <=>    ]  13.89K  --.-KB/s    in 0s
+
+2022-02-21 11:09:06 (195 MB/s) - 'jls.sh' saved [14224]
+
+--2022-02-21 11:09:06--  https://www.dropbox.com/s/qamao34r5s8fezc/w.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/qamao34r5s8fezc/w.sh [following]
+--2022-02-21 11:09:06--  https://www.dropbox.com/s/raw/qamao34r5s8fezc/w.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com/cd/0/inline/BgLRBUJMXu-sEzytiWBsQYtINa6DiOX4RSg-ZAzYIVPhmBod9D4TpeJOB9ORpX2-com8mexuER4mI2VVolpj7NJ0IaPeX4_AxWWLoTJzYFo6rcxv3eXLXsEq_M5gA0bGGChR-a-Rp-Pqa_lUHJePDl8V/file# [following]
+--2022-02-21 11:09:07--  https://uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com/cd/0/inline/BgLRBUJMXu-sEzytiWBsQYtINa6DiOX4RSg-ZAzYIVPhmBod9D4TpeJOB9ORpX2-com8mexuER4mI2VVolpj7NJ0IaPeX4_AxWWLoTJzYFo6rcxv3eXLXsEq_M5gA0bGGChR-a-Rp-Pqa_lUHJePDl8V/file
+Resolving uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com (uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com (uc94993cc22ddc17b8ded6cdb752.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'w.sh'
+
+w.sh                 [ <=>    ]  13.48K  --.-KB/s    in 0s
+
+2022-02-21 11:09:07 (136 MB/s) - 'w.sh' saved [13800]
+
+--2022-02-21 11:09:07--  https://www.dropbox.com/s/1z54h0gr73sedbp/jail.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/1z54h0gr73sedbp/jail.sh [following]
+--2022-02-21 11:09:07--  https://www.dropbox.com/s/raw/1z54h0gr73sedbp/jail.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com/cd/0/inline/BgJ6DANXPfAZdcF7dA442o2Yf5Q9IbmxioJDJnHjexEDiEr9JTl_msxK9YM6EvLYzQr5LWPs2kT20AVE8prZZ7sc2jqrkF9BYyuvRvyVCm7sRanTDSsDHNRO81zYs3IFXlWzEzL3WTHoYHZXOt33aSkq/file# [following]
+--2022-02-21 11:09:08--  https://ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com/cd/0/inline/BgJ6DANXPfAZdcF7dA442o2Yf5Q9IbmxioJDJnHjexEDiEr9JTl_msxK9YM6EvLYzQr5LWPs2kT20AVE8prZZ7sc2jqrkF9BYyuvRvyVCm7sRanTDSsDHNRO81zYs3IFXlWzEzL3WTHoYHZXOt33aSkq/file
+Resolving ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com (ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com (ucada4d4b48c581b82ba614a505b.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'jail.sh'
+
+jail.sh              [ <=>    ]  35.92K  --.-KB/s    in 0.03s
+
+2022-02-21 11:09:08 (1.34 MB/s) - 'jail.sh' saved [36784]
+
+--2022-02-21 11:09:08--  https://www.dropbox.com/s/6r8hgoi6k4ed6no/jl.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/6r8hgoi6k4ed6no/jl.sh [following]
+--2022-02-21 11:09:08--  https://www.dropbox.com/s/raw/6r8hgoi6k4ed6no/jl.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com/cd/0/inline/BgLXuaCWL-N96zQxagyXWEoDlxozNypXOKpXcrZp1iiPzKL_RCf7LdQfP4goHHuAxIgxopDmYpt5lduoFPv1Xp21B2z7CfSjlakXFsJRhn9i6_CPrYxoX5dC3CAmra3IRdunDpQdKdm_du9ZxAR70Gnm/file# [following]
+--2022-02-21 11:09:08--  https://uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com/cd/0/inline/BgLXuaCWL-N96zQxagyXWEoDlxozNypXOKpXcrZp1iiPzKL_RCf7LdQfP4goHHuAxIgxopDmYpt5lduoFPv1Xp21B2z7CfSjlakXFsJRhn9i6_CPrYxoX5dC3CAmra3IRdunDpQdKdm_du9ZxAR70Gnm/file
+Resolving uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com (uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com (uce01de4f259b2d5ce2fd4c26b47.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'jl.sh'
+
+jl.sh                [ <=>    ]  23.00K  --.-KB/s    in 0.02s
+
+2022-02-21 11:09:09 (1.33 MB/s) - 'jl.sh' saved [23552]
+
+--2022-02-21 11:09:09--  https://www.dropbox.com/s/dylv0pyxq6dhke7/amor.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/dylv0pyxq6dhke7/amor.sh [following]
+--2022-02-21 11:09:09--  https://www.dropbox.com/s/raw/dylv0pyxq6dhke7/amor.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com/cd/0/inline/BgLb5NQ3xL6R7cNIg9Ms3lKjlpXIqRHO6UU4XdQsIqE0Ge-VgI8j8uHRObM_XYqS29B6VdpZNCb_-jPTC1a335VPphgSJrcwNd-b2sQxdYLTJaCjKmEhb9pvTOsQDKakLuv6HVgO8KPZ0Dgfnwcju3ZH/file# [following]
+--2022-02-21 11:09:09--  https://ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com/cd/0/inline/BgLb5NQ3xL6R7cNIg9Ms3lKjlpXIqRHO6UU4XdQsIqE0Ge-VgI8j8uHRObM_XYqS29B6VdpZNCb_-jPTC1a335VPphgSJrcwNd-b2sQxdYLTJaCjKmEhb9pvTOsQDKakLuv6HVgO8KPZ0Dgfnwcju3ZH/file
+Resolving ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com (ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com (ucc9c0193944550a3f3895831c9c.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'amor.sh'
+
+amor.sh              [ <=>    ]  10.67K  --.-KB/s    in 0s
+
+2022-02-21 11:09:10 (212 MB/s) - 'amor.sh' saved [10928]
+
+--2022-02-21 11:09:10--  https://www.dropbox.com/s/oz9m2hditqwt8yu/op.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/oz9m2hditqwt8yu/op.sh [following]
+--2022-02-21 11:09:10--  https://www.dropbox.com/s/raw/oz9m2hditqwt8yu/op.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com/cd/0/inline/BgII6XnP9WPglC8dxHMhdDHnD5aruqzXki5jCnG0REZpnPi__ydmaCsbuz9aXV5j6WoE_aKWvhEgKyQFOwc1Hrn5QTiVneopRLNc8_r2ccvThJ5f8UMJZbnhdxsTBMZBN8SnhStUnp6U-1lvhnuSk4DJ/file# [following]
+--2022-02-21 11:09:10--  https://uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com/cd/0/inline/BgII6XnP9WPglC8dxHMhdDHnD5aruqzXki5jCnG0REZpnPi__ydmaCsbuz9aXV5j6WoE_aKWvhEgKyQFOwc1Hrn5QTiVneopRLNc8_r2ccvThJ5f8UMJZbnhdxsTBMZBN8SnhStUnp6U-1lvhnuSk4DJ/file
+Resolving uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com (uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com (uc1f3d2c66050e31888d7f6e03cc.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'op.sh'
+
+op.sh                [ <=>    ]  14.19K  --.-KB/s    in 0s
+
+2022-02-21 11:09:11 (81.9 MB/s) - 'op.sh' saved [14528]
+
+--2022-02-21 11:09:11--  https://www.dropbox.com/s/o7hb1i2velu4i2y/sdd.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/o7hb1i2velu4i2y/sdd.sh [following]
+--2022-02-21 11:09:11--  https://www.dropbox.com/s/raw/o7hb1i2velu4i2y/sdd.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com/cd/0/inline/BgK_6t4FCWPaOh9EA-alMVJoqpviJdV6frn27wHUAVwzYrsdupD-e8NXIiOBB2TT_gJz7ghIAV7pW3acyFTWXhUN2noEekseIVqHVlVrJClsFPfK7Xmq41ar_JNndZwe-4_q3LWdFCtVnUcdTGd-hfJw/file# [following]
+--2022-02-21 11:09:11--  https://uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com/cd/0/inline/BgK_6t4FCWPaOh9EA-alMVJoqpviJdV6frn27wHUAVwzYrsdupD-e8NXIiOBB2TT_gJz7ghIAV7pW3acyFTWXhUN2noEekseIVqHVlVrJClsFPfK7Xmq41ar_JNndZwe-4_q3LWdFCtVnUcdTGd-hfJw/file
+Resolving uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com (uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com (uc7b310a07489cba005e412fa8b1.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'sdd.sh'
+
+sdd.sh               [ <=>    ]  11.19K  --.-KB/s    in 0s
+
+2022-02-21 11:09:12 (223 MB/s) - 'sdd.sh' saved [11456]
+
+--2022-02-21 11:09:12--  https://www.dropbox.com/s/rqsf4egqjoxrbtj/c.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/rqsf4egqjoxrbtj/c.sh [following]
+--2022-02-21 11:09:12--  https://www.dropbox.com/s/raw/rqsf4egqjoxrbtj/c.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com/cd/0/inline/BgJippPxmWER0HgNOATFGzJWNiPW71amIx9wqc-Ee_BEXJR9B8WV5daZth7pq1hzeVbQWN3ocRHy23--oq4LpOhrtzBI3PJGrvEzibEIpypx_rhg5fpnZOFSXi0R3yTGHYnNmkWlpUDsW7HdS1LMW-C2/file# [following]
+--2022-02-21 11:09:12--  https://uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com/cd/0/inline/BgJippPxmWER0HgNOATFGzJWNiPW71amIx9wqc-Ee_BEXJR9B8WV5daZth7pq1hzeVbQWN3ocRHy23--oq4LpOhrtzBI3PJGrvEzibEIpypx_rhg5fpnZOFSXi0R3yTGHYnNmkWlpUDsW7HdS1LMW-C2/file
+Resolving uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com (uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com (uc04765d91c2f7d6b8279bfe657d.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'c.sh'
+
+c.sh                 [ <=>    ]  22.73K  --.-KB/s    in 0.02s
+
+2022-02-21 11:09:13 (1.25 MB/s) - 'c.sh' saved [23280]
+
+--2022-02-21 11:09:13--  https://www.dropbox.com/s/nfd4civvj2lscsp/jrd.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/nfd4civvj2lscsp/jrd.sh [following]
+--2022-02-21 11:09:13--  https://www.dropbox.com/s/raw/nfd4civvj2lscsp/jrd.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com/cd/0/inline/BgIgqGq5hSaXA78GjLGWZvPVWblfNstVjRKAaiQb7EqhLCmiSHZ7v5YVxILVcEcxbd-l9jcSuo8WkupUj0Xr_eApt1LcM1_gezXGPMDlafO_Nb6MU3WbVeScgn57iLcFylnoI5ij78geyhc4W6p7vuKz/file# [following]
+--2022-02-21 11:09:13--  https://uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com/cd/0/inline/BgIgqGq5hSaXA78GjLGWZvPVWblfNstVjRKAaiQb7EqhLCmiSHZ7v5YVxILVcEcxbd-l9jcSuo8WkupUj0Xr_eApt1LcM1_gezXGPMDlafO_Nb6MU3WbVeScgn57iLcFylnoI5ij78geyhc4W6p7vuKz/file
+Resolving uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com (uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com (uc2b15994ded0deb85670866563b.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'jrd.sh'
+
+jrd.sh               [ <=>    ]  16.88K  --.-KB/s    in 0.001s
+
+2022-02-21 11:09:14 (16.9 MB/s) - 'jrd.sh' saved [17284]
+
+--2022-02-21 11:09:14--  https://www.dropbox.com/s/x5q0f4fc07jmi9t/sd1.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/x5q0f4fc07jmi9t/sd1.sh [following]
+--2022-02-21 11:09:14--  https://www.dropbox.com/s/raw/x5q0f4fc07jmi9t/sd1.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com/cd/0/inline/BgKUVdCMtfHl0MfloE0WjNjERqHi0CMHnYuq_ca-qOLvbQGV2Vwoe84AskcejqJm1udX5PjmdlwY6MtmSn35albcvKCGzNoZUX8NWt3eorkW6b0tCrVHLYZ-jG0goJ4AL_cX5wqNfsYsHCHIQIylBou9/file# [following]
+--2022-02-21 11:09:14--  https://uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com/cd/0/inline/BgKUVdCMtfHl0MfloE0WjNjERqHi0CMHnYuq_ca-qOLvbQGV2Vwoe84AskcejqJm1udX5PjmdlwY6MtmSn35albcvKCGzNoZUX8NWt3eorkW6b0tCrVHLYZ-jG0goJ4AL_cX5wqNfsYsHCHIQIylBou9/file
+Resolving uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com (uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com (uc3a4e639342843eb1d5481fadfd.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'sd1.sh'
+
+sd1.sh               [ <=>    ]  20.42K  --.-KB/s    in 0.02s
+
+2022-02-21 11:09:14 (1.06 MB/s) - 'sd1.sh' saved [20912]
+
+--2022-02-21 11:09:14--  https://www.dropbox.com/s/ndkvxhe9i9lpmcr/x.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/ndkvxhe9i9lpmcr/x.sh [following]
+--2022-02-21 11:09:15--  https://www.dropbox.com/s/raw/ndkvxhe9i9lpmcr/x.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com/cd/0/inline/BgLvtBHAs-guTSCheMcfVbcYzdapPSg-J0FbKVqTEsW4UXz3DaH_MUviftPeD2NhJJ0CYjOAhla4wCPdYwYa3aRKJwIj9wwmblMUJCg9i2cV7mvUzQNdQ1Hv9FROwuXiaIeMfsBvSlkxadLdh3Xm1wU8/file# [following]
+--2022-02-21 11:09:15--  https://uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com/cd/0/inline/BgLvtBHAs-guTSCheMcfVbcYzdapPSg-J0FbKVqTEsW4UXz3DaH_MUviftPeD2NhJJ0CYjOAhla4wCPdYwYa3aRKJwIj9wwmblMUJCg9i2cV7mvUzQNdQ1Hv9FROwuXiaIeMfsBvSlkxadLdh3Xm1wU8/file
+Resolving uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com (uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com (uc73692ac5598d567592b31fe6b8.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'x.sh'
+
+x.sh                 [ <=>    ]  12.13K  --.-KB/s    in 0s
+
+2022-02-21 11:09:15 (127 MB/s) - 'x.sh' saved [12424]
+
+--2022-02-21 11:09:15--  https://www.dropbox.com/s/9j32vc87p8af3qb/jk.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/9j32vc87p8af3qb/jk.sh [following]
+--2022-02-21 11:09:16--  https://www.dropbox.com/s/raw/9j32vc87p8af3qb/jk.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com/cd/0/inline/BgLSJSavfaRsKj2OPu79BiVin5bMrssCqG14m1uvJC4wPAjGuPaiAOklV7XxV7E8v-fb7QjTeC51CKcnPCS2wqUIdEsCmp-n_W9-6BZzsGaHxAsaL8mxEAi2NuC5LM-az97dlrYm8p_pSCM4No2SPxpX/file# [following]
+--2022-02-21 11:09:16--  https://ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com/cd/0/inline/BgLSJSavfaRsKj2OPu79BiVin5bMrssCqG14m1uvJC4wPAjGuPaiAOklV7XxV7E8v-fb7QjTeC51CKcnPCS2wqUIdEsCmp-n_W9-6BZzsGaHxAsaL8mxEAi2NuC5LM-az97dlrYm8p_pSCM4No2SPxpX/file
+Resolving ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com (ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com (ucf7ec944de07c9cff167b9359e9.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'jk.sh'
+
+jk.sh                [ <=>    ]  12.34K  --.-KB/s    in 0s
+
+2022-02-21 11:09:16 (194 MB/s) - 'jk.sh' saved [12632]
+
+--2022-02-21 11:09:16--  https://www.dropbox.com/s/ufiqi04twvltubq/sd.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/ufiqi04twvltubq/sd.sh [following]
+--2022-02-21 11:09:16--  https://www.dropbox.com/s/raw/ufiqi04twvltubq/sd.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com/cd/0/inline/BgJLNuTUg8n6hRmM6WyIBR1nLbxOXFyMkepGGZTFrcC1rlVlwvEZlRYtd0IGRwtR_CmMASQhZa4FJ-UbbCeDen5013drRMnYIHLvvDsgiFvXWar-dHQ0PxRl9Bkfs1rhRFt1Bb9jS5mUJ0HtbNwulV-m/file# [following]
+--2022-02-21 11:09:17--  https://uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com/cd/0/inline/BgJLNuTUg8n6hRmM6WyIBR1nLbxOXFyMkepGGZTFrcC1rlVlwvEZlRYtd0IGRwtR_CmMASQhZa4FJ-UbbCeDen5013drRMnYIHLvvDsgiFvXWar-dHQ0PxRl9Bkfs1rhRFt1Bb9jS5mUJ0HtbNwulV-m/file
+Resolving uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com (uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com (uc6acff00a7cfb23ebaea65df99a.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'sd.sh'
+
+sd.sh                [ <=>    ]  11.24K  --.-KB/s    in 0s
+
+2022-02-21 11:09:17 (167 MB/s) - 'sd.sh' saved [11512]
+
+--2022-02-21 11:09:17--  https://www.dropbox.com/s/2rda4vp5u0vydju/listausuarios.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/2rda4vp5u0vydju/listausuarios.sh [following]
+--2022-02-21 11:09:17--  https://www.dropbox.com/s/raw/2rda4vp5u0vydju/listausuarios.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com/cd/0/inline/BgJP2S6tEDn3MW-9u0CBSvXaiOS0NHaadSq9LvHZeKgEdVcNNOlTyds5wKup0Iwu9qLPvO6IbCq9qRKE7ae_WFddvbEnuOm5gcGXJzPULTzlb_ylxqujcC99bUo184HLJsWY025dFaPRH6ETw26-Ccck/file# [following]
+--2022-02-21 11:09:18--  https://ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com/cd/0/inline/BgJP2S6tEDn3MW-9u0CBSvXaiOS0NHaadSq9LvHZeKgEdVcNNOlTyds5wKup0Iwu9qLPvO6IbCq9qRKE7ae_WFddvbEnuOm5gcGXJzPULTzlb_ylxqujcC99bUo184HLJsWY025dFaPRH6ETw26-Ccck/file
+Resolving ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com (ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com (ucd0dc8b56bcdad48fd2107f4f05.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'listausuarios.sh'
+
+listausuarios.sh     [ <=>    ]  12.89K  --.-KB/s    in 0s
+
+2022-02-21 11:09:18 (200 MB/s) - 'listausuarios.sh' saved [13200]
+--2022-02-21 11:09:18--  https://www.dropbox.com/s/02yorqvxansx9a2/lj.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/02yorqvxansx9a2/lj.sh [following]
+--2022-02-21 11:09:18--  https://www.dropbox.com/s/raw/02yorqvxansx9a2/lj.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com/cd/0/inline/BgJz9Rkpc9lNWNfy1LqvzLgSxT5FYI_93tjmBL87MmSukAeCSjACZVq1NWN9IfxlauDD6JfE9j5YxE1dZ2Yy0k3s63rTEnNstsw9fbpKMhMulwf8_RrL8LIQs7iy8vQRHugLKjN3GDIIWoy5uPzAnW34/file# [following]
+--2022-02-21 11:09:19--  https://uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com/cd/0/inline/BgJz9Rkpc9lNWNfy1LqvzLgSxT5FYI_93tjmBL87MmSukAeCSjACZVq1NWN9IfxlauDD6JfE9j5YxE1dZ2Yy0k3s63rTEnNstsw9fbpKMhMulwf8_RrL8LIQs7iy8vQRHugLKjN3GDIIWoy5uPzAnW34/file
+Resolving uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com (uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com (uc82ff1664214e69ce8ac873504a.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'lj.sh'
+
+lj.sh                [ <=>    ]  17.70K  --.-KB/s    in 0.001s
+
+2022-02-21 11:09:19 (17.4 MB/s) - 'lj.sh' saved [18120]
+
+--2022-02-21 11:09:19--  https://www.dropbox.com/s/42hbmx1f6scmf7e/eliminar.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/42hbmx1f6scmf7e/eliminar.sh [following]
+--2022-02-21 11:09:20--  https://www.dropbox.com/s/raw/42hbmx1f6scmf7e/eliminar.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com/cd/0/inline/BgIOFEc2_kpv7evksAIsAqRLdAQntq-Wx9FCe4e1_Cx0QXmRj02sFEyLl8xZgy3npII481Ov6Vvh3V6CrnjHd6IRKYV8vCmXpmq9VnM6TWmTP3cTMyXtDSFi5huZckj9RyYuHe7khisikOJU0A-gUHk7/file# [following]
+--2022-02-21 11:09:20--  https://uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com/cd/0/inline/BgIOFEc2_kpv7evksAIsAqRLdAQntq-Wx9FCe4e1_Cx0QXmRj02sFEyLl8xZgy3npII481Ov6Vvh3V6CrnjHd6IRKYV8vCmXpmq9VnM6TWmTP3cTMyXtDSFi5huZckj9RyYuHe7khisikOJU0A-gUHk7/file
+Resolving uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com (uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com (uc47f31233d7913cda592bc549cc.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'eliminar.sh'
+
+eliminar.sh          [ <=>    ]  12.56K  --.-KB/s    in 0s
+
+2022-02-21 11:09:20 (210 MB/s) - 'eliminar.sh' saved [12864]
+
+--2022-02-21 11:09:20--  https://www.dropbox.com/s/g9y1clk9orjj3ct/u.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/g9y1clk9orjj3ct/u.sh [following]
+--2022-02-21 11:09:21--  https://www.dropbox.com/s/raw/g9y1clk9orjj3ct/u.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com/cd/0/inline/BgIQoOdXX283t9D4xA5RMeS_LzxoWd9pARNLqmqs9qLUJcGCpCFU_k5Aoenp6al3wOAk5-SFdcPBwHjVsIWnLZg4SoxW8NN1QMfigB7eVPMCIdltoC9QQqovblsTFHE-ljHRIOaJqZ_rJFmxQwjjbTnr/file# [following]
+--2022-02-21 11:09:21--  https://uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com/cd/0/inline/BgIQoOdXX283t9D4xA5RMeS_LzxoWd9pARNLqmqs9qLUJcGCpCFU_k5Aoenp6al3wOAk5-SFdcPBwHjVsIWnLZg4SoxW8NN1QMfigB7eVPMCIdltoC9QQqovblsTFHE-ljHRIOaJqZ_rJFmxQwjjbTnr/file
+Resolving uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com (uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com (uc87fab98b5d31d769748541ce5c.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'u.sh'
+
+u.sh                 [ <=>    ]  10.91K  --.-KB/s    in 0s
+
+2022-02-21 11:09:21 (205 MB/s) - 'u.sh' saved [11176]
+
+--2022-02-21 11:09:21--  https://www.dropbox.com/s/yfj2u0mgi9xmdx2/desbloquear.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/yfj2u0mgi9xmdx2/desbloquear.sh [following]
+--2022-02-21 11:09:21--  https://www.dropbox.com/s/raw/yfj2u0mgi9xmdx2/desbloquear.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com/cd/0/inline/BgKW9suDbznq7d6IAuAiLmXZ9C-wXaqT25qJ1bFuea_VOrCZKEGHCLvkeb7c_j9hrbB6SbTc-yk-3JpR2PrP7SRVZdeiwkcNLfgG-cI-FWYyAgeOTvrYj8zWlbe365hFSyrXZC4X0w4AywEROpO-8_zq/file# [following]
+--2022-02-21 11:09:22--  https://uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com/cd/0/inline/BgKW9suDbznq7d6IAuAiLmXZ9C-wXaqT25qJ1bFuea_VOrCZKEGHCLvkeb7c_j9hrbB6SbTc-yk-3JpR2PrP7SRVZdeiwkcNLfgG-cI-FWYyAgeOTvrYj8zWlbe365hFSyrXZC4X0w4AywEROpO-8_zq/file
+Resolving uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com (uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com (uc64273972f8f79d5253833157e4.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'desbloquear.sh'
+
+desbloquear.sh       [ <=>    ]  12.34K  --.-KB/s    in 0s
+
+2022-02-21 11:09:22 (37.5 MB/s) - 'desbloquear.sh' saved [12632]
+
+--2022-02-21 11:09:22--  https://www.dropbox.com/s/kcqt5utoboplplh/v.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/kcqt5utoboplplh/v.sh [following]
+--2022-02-21 11:09:22--  https://www.dropbox.com/s/raw/kcqt5utoboplplh/v.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com/cd/0/inline/BgL42LWwEbAB42XiqPHJzkha69RFli4Q9hI4PTTdbXVzcmHXpNYSRH5uqqA6w5DTYTQHVyMjU7je1NeIAj2qF8Vk-wbZThgGf_gdh2nX58SAorjJ5BnyzcGybwFQDHqE3-i-nHQFWxRHSk061hrthtuh/file# [following]
+--2022-02-21 11:09:23--  https://uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com/cd/0/inline/BgL42LWwEbAB42XiqPHJzkha69RFli4Q9hI4PTTdbXVzcmHXpNYSRH5uqqA6w5DTYTQHVyMjU7je1NeIAj2qF8Vk-wbZThgGf_gdh2nX58SAorjJ5BnyzcGybwFQDHqE3-i-nHQFWxRHSk061hrthtuh/file
+Resolving uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com (uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com (uca348491d6dfaa6d6f127b0a3c4.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'v.sh'
+
+v.sh                 [ <=>    ]  11.06K  --.-KB/s    in 0s
+
+2022-02-21 11:09:23 (233 MB/s) - 'v.sh' saved [11328]
+
+--2022-02-21 11:09:23--  https://www.dropbox.com/s/idfcfnt3rif2rmm/cuss.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/idfcfnt3rif2rmm/cuss.sh [following]
+--2022-02-21 11:09:23--  https://www.dropbox.com/s/raw/idfcfnt3rif2rmm/cuss.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com/cd/0/inline/BgILlnj2qE9qr0QD8dmX0-n8f_vV8zR0nB1VPRhUcqeBdqQrjTpt24r2c8ituBo8KJ4Ji0lFuWx8KPOH_fct7My5FvxylToYQkZTWIF-EaivKwvycPZfd6CWjWKeSfMVEGU669CHQuBZ9dPCXtiLtIQJ/file# [following]
+--2022-02-21 11:09:24--  https://uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com/cd/0/inline/BgILlnj2qE9qr0QD8dmX0-n8f_vV8zR0nB1VPRhUcqeBdqQrjTpt24r2c8ituBo8KJ4Ji0lFuWx8KPOH_fct7My5FvxylToYQkZTWIF-EaivKwvycPZfd6CWjWKeSfMVEGU669CHQuBZ9dPCXtiLtIQJ/file
+Resolving uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com (uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com (uc8c7924490e3ddafe858da9f875.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'cuss.sh'
+
+cuss.sh              [ <=>    ]  13.51K  --.-KB/s    in 0s
+
+2022-02-21 11:09:24 (93.7 MB/s) - 'cuss.sh' saved [13832]
+
+--2022-02-21 11:09:24--  https://www.dropbox.com/s/fbrv3byewy7l16h/te.py
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/fbrv3byewy7l16h/te.py [following]
+--2022-02-21 11:09:24--  https://www.dropbox.com/s/raw/fbrv3byewy7l16h/te.py
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com/cd/0/inline/BgLRdegpyNkQDBpCyHlQoM8hw_YM_AcJUcKUWDP-INJ4oRQSJoc1q4Iugla10Y1NfC5UuLjefm0VsEsAVeuPZVnzbxtD6SopEcaOTAqM5FFuDAyGnfY_JwB_Fz-cQZIN-iUo4uCgjfyX2VcsaQypgIcz/file# [following]
+--2022-02-21 11:09:25--  https://uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com/cd/0/inline/BgLRdegpyNkQDBpCyHlQoM8hw_YM_AcJUcKUWDP-INJ4oRQSJoc1q4Iugla10Y1NfC5UuLjefm0VsEsAVeuPZVnzbxtD6SopEcaOTAqM5FFuDAyGnfY_JwB_Fz-cQZIN-iUo4uCgjfyX2VcsaQypgIcz/file
+Resolving uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com (uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com (uccaa1131ef5de6005a347228c47.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'te.py'
+
+te.py                [ <=>    ]   6.77K  --.-KB/s    in 0s
+
+2022-02-21 11:09:25 (588 MB/s) - 'te.py' saved [6937]
+
+--2022-02-21 11:09:25--  https://www.dropbox.com/s/5ekq30i0u84mudj/bloquear.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/5ekq30i0u84mudj/bloquear.sh [following]
+--2022-02-21 11:09:25--  https://www.dropbox.com/s/raw/5ekq30i0u84mudj/bloquear.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com/cd/0/inline/BgKTJ12h--XzhzYRJH-nVPK32RBOco0VoeHXY2N1IQdO4aZ7iJYe-Yi2h92VlqwExBa71gvtd-o3PXwuaffmw1BjppBniPWSk3W1V6X5p3g05JQBQqphiII6tALVBqVisSazC0IVBtJFUAOtCYL0trFb/file# [following]
+--2022-02-21 11:09:26--  https://uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com/cd/0/inline/BgKTJ12h--XzhzYRJH-nVPK32RBOco0VoeHXY2N1IQdO4aZ7iJYe-Yi2h92VlqwExBa71gvtd-o3PXwuaffmw1BjppBniPWSk3W1V6X5p3g05JQBQqphiII6tALVBqVisSazC0IVBtJFUAOtCYL0trFb/file
+Resolving uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com (uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com (uc578f01d2a72d4420873d7c4246.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'bloquear.sh'
+
+bloquear.sh          [ <=>    ]  12.31K  --.-KB/s    in 0s
+
+2022-02-21 11:09:26 (152 MB/s) - 'bloquear.sh' saved [12608]
+
+--2022-02-21 11:09:26--  https://www.dropbox.com/s/um8mwvlrbzis6pw/pay.sh
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/um8mwvlrbzis6pw/pay.sh [following]
+--2022-02-21 11:09:26--  https://www.dropbox.com/s/raw/um8mwvlrbzis6pw/pay.sh
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com/cd/0/inline/BgKjjHz8zKBpjo05Yp9NsHfht9cH4BB3Ki8dv_A-VjdMcXId7Qb-rub3_D3bW5-8uQHJzqrt3Rv3Ag8aDy98wFdp6w5FK9hUhQXMNwVCt4PkhJVHbYXiuH0eTQALEcJQRVM67ND-nvSZwXrMVT8o2xj3/file# [following]
+--2022-02-21 11:09:27--  https://uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com/cd/0/inline/BgKjjHz8zKBpjo05Yp9NsHfht9cH4BB3Ki8dv_A-VjdMcXId7Qb-rub3_D3bW5-8uQHJzqrt3Rv3Ag8aDy98wFdp6w5FK9hUhQXMNwVCt4PkhJVHbYXiuH0eTQALEcJQRVM67ND-nvSZwXrMVT8o2xj3/file
+Resolving uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com (uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com (uc9e73c3c329e77357805b7bc11b.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'pay.sh'
+
+pay.sh               [ <=>    ]  31.45K  --.-KB/s    in 0.02s
+
+2022-02-21 11:09:27 (1.34 MB/s) - 'pay.sh' saved [32200]
+
+--2022-02-21 11:09:28--  https://www.dropbox.com/s/9u7r6spza2i9mkq/proxy.py
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/9u7r6spza2i9mkq/proxy.py [following]
+--2022-02-21 11:09:28--  https://www.dropbox.com/s/raw/9u7r6spza2i9mkq/proxy.py
+Reusing existing connection to www.dropbox.com:443.
+HTTP request sent, awaiting response... 302 Found
+Location: https://uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com/cd/0/inline/BgJVaFI_HStlY8fP-GZH5qsbwur23ynDugGfVyYnYDOAcgvAZSc5YiwOr6djb7DK3BtXL-A0h_TE5QuKNUEYuAa1uE4UORwDKcb-yzX92mln0BuZWAnXaLct_8egC2YnIyCFJWxxjj0VuqlfmMMQcu23/file# [following]
+--2022-02-21 11:09:29--  https://uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com/cd/0/inline/BgJVaFI_HStlY8fP-GZH5qsbwur23ynDugGfVyYnYDOAcgvAZSc5YiwOr6djb7DK3BtXL-A0h_TE5QuKNUEYuAa1uE4UORwDKcb-yzX92mln0BuZWAnXaLct_8egC2YnIyCFJWxxjj0VuqlfmMMQcu23/file
+Resolving uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com (uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com)... 162.125.8.15, 2620:100:601b:15::a27d:80f
+Connecting to uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com (uc23ab16d92176713d9a0377b6d5.dl.dropboxusercontent.com)|162.125.8.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: 'proxy.py'
+
+proxy.py             [ <=>    ]   7.36K  --.-KB/s    in 0s
+
+2022-02-21 11:09:29 (677 MB/s) - 'proxy.py' saved [7537]
+
+--2022-02-21 11:09:29--  https://www.dropbox.com/s/mpkaj0zf2w48fjz/menu
+Resolving www.dropbox.com (www.dropbox.com)... 162.125.8.18, 2620:100:601b:18::a27d:812
+Connecting to www.dropbox.com (www.dropbox.com)|162.125.8.18|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /s/raw/mpkaj0zf2w48fjz/menu [following]
+--2022-02-21 11:09:29--  https://www.dropbox.com/s/raw/mpkaj0zf2w
