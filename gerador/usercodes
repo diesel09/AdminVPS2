@@ -962,7 +962,7 @@ msg -verd "$(fun_trans  "Bienvenido al instalador del BANNER-SSH/DROPBEAR")"
 msg -bar
 msg -ne "$(fun_trans  "Escriba el mensaje principal del BANNER en HTML"): \n" && read ban_ner
 msg -bar
-credi="$(less /etc/newadm/messagebanner.txt)"
+credi="$(less /etc/newadm/message.txt)"
 echo "$ban_ner" >> $local
 echo '<p style="text-align: center;"><strong><span style="color: #ff0000;">Admin Vps&reg;</span> |&nbsp;</strong><span style="color: #0000ff;"><strong>'$credi'</strong></span></p>' >> $local
 if [[ -e "$local2" ]]; then
