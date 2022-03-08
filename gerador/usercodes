@@ -787,7 +787,6 @@ esac
 msg -bar
 }
 
-
 ##LIMITADOR 
 
 verif_funx () {
@@ -795,13 +794,12 @@ verif_funx () {
 echo -e "\033[1;32m             LIMITADOR DE CUENTAS"
 msg -bar
 echo -e "Esta Opcion Limita las Conexiones de SSH/SSL/DROPBEAR"
-msg -bar
-[[ -z ${VERY} ]] && verificar="\033[1;32m ACTIVADO " || verificar="\033[1;31m DESACTIVADO "
-echo -e "            $verificar  --  CON EXITO"
-msg -bar
-
 PIDVRF="$(ps aux|grep "${SCPusr}/usercodes verificar"|grep -v grep|awk '{print $2}')"
 if [[ -z $PIDVRF ]]; then
+msg -bar
+echo -ne "\033[1;96m   ¿Cada cuantos segundos ejecutar el limitador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 120s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemlim   
+[[ -z "$tiemlim" ]] && tiemlim="120"
+echo "${tiemlim}" > /etc/newadm/ger-user/tiemlim.log
 cd ${SCPusr}
 screen -dmS very ${SCPusr}/usercodes verificar
 else
@@ -812,22 +810,24 @@ done
 [[ -e ${SCPdir}/USRexpired ]] && rm ${SCPdir}/USRexpired
 [[ -e ${SCPdir}/USRbloqueados ]] && rm ${SCPdir}/USRbloqueados
 fi
+msg -bar
+[[ -z ${VERY} ]] && verificar="\033[1;32m ACTIVADO " || verificar="\033[1;31m DESACTIVADO "
+echo -e "            $verificar  --  CON EXITO"
+msg -bar
 }
 
 ##DESBLOEUEAR
 
 verif2_funx () {
-
 echo -e "\033[1;32m      DESBLOQUEO AUT. Y LIMPIADOR DE EXPIARDOS"
 msg -bar
 echo -e "Esta opcion desbloquea cada 60 segundos a usuarios\nbloqueados por el limitador y limpia los usuarios expirados"
-msg -bar
-[[ -z ${VERY2} ]] && desbloqueo="\033[1;32m ACTIVADO " || desbloqueo="\033[1;31m DESACTIVADO "
-echo -e "            $desbloqueo  --  CON EXITO"
-msg -bar
-
 PIDVRF2="$(ps aux|grep "${SCPusr}/usercodes desbloqueo"|grep -v grep|awk '{print $2}')"
 if [[ -z $PIDVRF2 ]]; then
+msg -bar
+echo -ne "\033[1;96m   ¿Cada cuantos segundos ejecutar el desbloqueador?\n\033[1;97m  +Segundos = -Uso de CPU | -Segundos = +Uso de CPU\033[0;92m \n                Predeterminado:\033[1;37m 300s\n     Cuantos Segundos (Numeros Unicamente): " && read tiemdes   
+[[ -z "$tiemdes" ]] && tiemdes="300"
+echo "${tiemdes}" > /etc/newadm/ger-user/tiemdes.log
 cd ${SCPusr}
 screen -dmS very2 ${SCPusr}/usercodes desbloqueo
 else
@@ -836,6 +836,10 @@ kill -9 $pid &>/dev/null
 done
 
 fi
+msg -bar
+[[ -z ${VERY2} ]] && desbloqueo="\033[1;32m ACTIVADO " || desbloqueo="\033[1;31m DESACTIVADO "
+echo -e "            $desbloqueo  --  CON EXITO"
+msg -bar
 }
 
 cleanreg () {
