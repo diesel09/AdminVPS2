@@ -394,7 +394,7 @@ msg -bar
 read -p "Enter"
 }
 atualizar_geb () {
-wget -O $HOME/instger.sh https://raw.githubusercontent.com/diesel09/genmx8.3/master/GENERADOR-VPS-MX/instgerador.sh &>/dev/null
+wget -O $HOME/instger.sh https://www.dropbox.com/s/6zxvnque2ky2ery/instgerador.sh?dl=0 &>/dev/null
 chmod +x $HOME/instger.sh
 cd $HOME
 ./instger.sh
