@@ -402,7 +402,7 @@ rm $HOME/instger.sh &>/dev/null
 }
 bot_menu () {
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-[[ ! -e "${CIDdir}/confbot.sh" ]] && wget -O ${CIDdir}/confbot.sh https://www.dropbox.com/s/qhi6omo7ztp2me3/confbot.sh?dl=0 &> /dev/null && chmod +x ${CIDdir}/confbot.sh
+[[ ! -e "${CIDdir}/confbot.sh" ]] && wget -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/diesel09/AdminVPS2/main/confbot.sh &> /dev/null && chmod +x ${CIDdir}/confbot.sh
 sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
 source ${CIDdir}/confbot.sh
 bot_conf
