@@ -411,7 +411,7 @@ links_inst  () {
 msg -bar
 echo -e "\e[97m\033[1;32m =====>> INSTALACION SCRIPT - ADMIN VPS <<===== \033"
 msg -bar
-echo -e "apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AizenNetFreeMx/adminVps1.5/main/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*"
+echo -e "apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/AizenNetFreeMx/AdminVPS/main/instalscript.sh; chmod 777 instalscript.sh* && ./instalscript.sh*"
 msg -bar
 read -p "Enter para Finalizar"
 }
