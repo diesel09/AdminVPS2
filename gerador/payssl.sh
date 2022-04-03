@@ -16,11 +16,11 @@ fun_bar () {
           tput civis
 		  echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
           #echo -ne "${col7}    ESPERE..\033[1;35m["
-          #while true; do
-          #for((i=0; i<18; i++)); do
-          #echo -ne "\033[1;34m#"
-          #sleep 0.2s
-          #done
+          while true; do
+          for((i=0; i<18; i++)); do
+          echo -ne "\033[1;34m#"
+          sleep 0.2s
+          done
          [[ -e $HOME/fim ]] && rm $HOME/fim && break
          echo -e "${col5}"
          sleep 1s
