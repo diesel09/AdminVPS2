@@ -20,7 +20,7 @@ fun_bar () {
           #for((i=0; i<18; i++)); do
           echo -ne "\033[1;34m#"
           sleep 0.2s
-          done
+          #done
          [[ -e $HOME/fim ]] && rm $HOME/fim && break
          echo -e "${col5}"
          sleep 1s
