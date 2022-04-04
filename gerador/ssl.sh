@@ -173,17 +173,17 @@ msg -bar
   apt-get install python -y &>/dev/null && echo -e "\033[1;97m Activando Python Directo ►80\n" | pv -qL 10
   
   sleep 3  
-  screen -dmS pydic-80 python ${SCPinst}/python.py 80 "VPS-MX" && echo "80 VPS-MX" >> /etc/VPS-MX/PySSL.log
+  screen -dmS pydic-80 python ${SCPinst}/python.py 80 "AdminVps" && echo "80 Admin Vps" >> /etc/SCRIPT/PySSL.log
   msg -bar
   } 
   
   install_ssl(){  
-  apt-get install stunnel4 -y &>/dev/null && echo -e "\033[1;97m Activando Servicios SSL ►443\n" | pv -qL 12
+  apt-get install stunnel4 -y &>/dev/null && echo -e "\033[1;97m Activando Servicios SSL ►443\n"
   
   apt-get install stunnel4 -y > /dev/null 2>&1 
   echo -e "client = no\n[SSL]\ncert = /etc/stunnel/stunnel.pem\naccept = 443\nconnect = 127.0.0.1:80" > /etc/stunnel/stunnel.conf 
   openssl genrsa -out stunnel.key 2048 > /dev/null 2>&1 
-  (echo mx; echo @lacasitamx; echo Full; echo speed; echo internet; echo @conectedmx; echo @conectedmx_bot)|openssl req -new -key stunnel.key -x509 -days 1095 -out stunnel.crt > /dev/null 2>&1
+  (echo mx; echo @adminvps; echo Full; echo speed; echo internet; echo @felipecouoh; echo @felipecouoh)|openssl req -new -key stunnel.key -x509 -days 1095 -out stunnel.crt > /dev/null 2>&1
   cat stunnel.crt stunnel.key > stunnel.pem   
   mv stunnel.pem /etc/stunnel/ 
   ######------- 
