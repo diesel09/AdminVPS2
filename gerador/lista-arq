@@ -19,6 +19,7 @@ POpen.py
 ports.sh
 PPriv.py
 PPub.py
+python.py
 shadowsocks.sh
 Shadowsocks-libev.sh
 Shadowsocks-R.sh
