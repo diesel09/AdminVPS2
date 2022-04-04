@@ -16,18 +16,18 @@ fun_bar () {
           tput civis
 		  echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
           echo -ne "${col7}    ESPERE..\033[1;35m["
-          #while true; do
-          #for((i=0; i<18; i++)); do
+          while true; do
+          for((i=0; i<18; i++)); do
           echo -ne "\033[1;34m#"
           sleep 0.2s
-          #done
+          done
          [[ -e $HOME/fim ]] && rm $HOME/fim && break
          echo -e "${col5}"
          sleep 1s
          tput cuu1
          tput dl1
          echo -ne "\033[1;37m    ESPERE..\033[1;35m["
-         #done
+         done
          echo -e "\033[1;35m]\033[1;37m -\033[1;32m INSTALADO !\033[1;37m"
          tput cnorm
 		 echo -e "\033[1;31m———————————————————————————————————————————————————\033[1;37m"
