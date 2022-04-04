@@ -8,7 +8,7 @@ fun_bar () {
           comando[0]="$1"
           comando[1]="$2"
           (
-          #[[ -e $HOME/fim ]] && rm $HOME/fim
+          [[ -e $HOME/fim ]] && rm $HOME/fim
           ${comando[0]} > /dev/null 2>&1
           ${comando[1]} > /dev/null 2>&1
           touch $HOME/fim
@@ -21,7 +21,7 @@ fun_bar () {
           echo -ne "\033[1;34m#"
           sleep 0.2s
           done
-         #[[ -e $HOME/fim ]] && rm $HOME/fim && break
+         [[ -e $HOME/fim ]] && rm $HOME/fim && break
          echo -e "${col5}"
          sleep 1s
          tput cuu1
