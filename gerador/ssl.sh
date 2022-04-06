@@ -170,7 +170,7 @@ msg -bar
  [[ $seg = @(n|N) ]] && msg -bar && return
  clear
  install_python(){ 
-  apt-get install python -y &>/dev/null && echo -e "\033[1;97m Activando Python Directo ►80\n" | pv -qL 10
+  apt-get install python -y &>/dev/null && echo -e "\033[1;97m Activando Python Directo ►80\n"
   
   sleep 3  
   screen -dmS pydic-80 python ${SCPinst}/python.py 80 "AdminVps" && echo "80 Admin Vps" >> /etc/SCRIPT/PySSL.log
